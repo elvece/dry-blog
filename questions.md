@@ -9,6 +9,7 @@
 1. Tell us about one challenge that you have faced during your professional experience in the tech world and how you overcame it.
 1. Do you have any advice for other women in the tech field?
 1. Lastly, share your favorite resource with us! It can be a book, music, website, movie, anything that has inspired you, and does not have to be tech related!
+1. Do you have anyone else you could recommend for our blog?
 
 ### Developer Questions
 
