@@ -3,7 +3,13 @@ var router = express.Router();
 var Post = require('../models/posts.js');
 
 router.get('/', function(req, res, next) {
-  res.render('index');
+  Post.findQ()
+    .then(function(results){
+      res.json(results);
+    }).catch(function(results){
+      res.json({'message': results});
+    })
+    .done();
 });
 
 router.get('/add', function(req, res, next) {
@@ -15,8 +21,15 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/post/:id', function(req, res, next) {
-  res.render('post');
+  Post.findByIdQ(req.params.id)
+    .then(function(results){
+      res.json(results);
+    }).catch(function(results){
+      res.json({'message': results});
+    })
+    .done();
 });
+
 
 router.post('/add', function(req, res, next) {
   newPost = new Post({
@@ -24,7 +37,6 @@ router.post('/add', function(req, res, next) {
     lastName: req.body.last,
     position: req.body.position,
     company: req.body.company,
-    img: req.body.img,
     social: {
       gitHub: req.body.gitHub,
       website: req.body.website,
@@ -34,13 +46,13 @@ router.post('/add', function(req, res, next) {
       facebook: req.body.facebook
     }
   })
-  .save()
-  .then(function(results){
-    res.json(results);
-  }).catch(function(results){
-    res.json({'message': results});
-  })
-  .done();
+    .save()
+    .then(function(results){
+      res.json(results);
+    }).catch(function(results){
+      res.json({'message': results});
+    })
+    .done();
 });
 
 // router.put('/add/:id', function(req, res, next) {
