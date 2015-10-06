@@ -1,68 +1,3 @@
-body {
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
-    background-color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-a {
-    color: #964647;
-}
-
-.light {
-    font-weight: 400;
-}
-
-/*NAVBAR*/
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #fff;
-}
-
-.navbar-custom .navbar-brand {
-    font-weight: 700;
-}
-
-.navbar-custom a {
-    color: #000;
-}
-
-.navbar-custom .nav li a:hover {
-    color: #964647;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-    outline: 0;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #964647;
-}
-
 /*INTERVIEW LANDING PAGE*/
 .intro {
     display: table;
@@ -171,42 +106,6 @@ a {
     }
 }
 
-
-.btn {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-/*SOCIAL BUTTONS*/
-.btn-default {
-    border: 1px solid #000;
-    color: #000;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #964647;
-    outline: 0;
-    color: #964647;
-    background-color: #fff;
-}
-
-/*FOOTER*/
-footer {
-    padding: 1em 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
 /*INTERVIEW*/
 #interview {
     padding-top: 5em;
@@ -224,5 +123,29 @@ footer p {
     padding-bottom: 2em;
     text-align: left;
 }
+
+/*SOCIAL BUTTONS*/
+.interviewBtn {
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+        border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.interviewBtn:hover,
+.interviewBtn:focus {
+    border: 1px solid #964647;
+    outline: 0;
+    color: #964647;
+    background-color: #fff;
+}
+
+
 
 
