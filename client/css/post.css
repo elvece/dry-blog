@@ -1,3 +1,25 @@
 .form-group {
   text-align: left;
+  display: inline;
+}
+
+.blocks {
+  background-color: gray;
+}
+
+.addBtn {
+    color: #000;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6em;
+    margin: -0.55em;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.addBtn:hover,
+.addBtn:focus {
+    color: #964647;
+    background-color: #fff;
 }
