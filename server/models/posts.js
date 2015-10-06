@@ -8,7 +8,7 @@ var Post = new Schema({
   position: String,
   company: String,
   img: Array,
-  content: Array,
+  content: [],
   social: {
     gitHub: String,
     website: String,
