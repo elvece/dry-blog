@@ -71,7 +71,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: #000;
-    background: url(../img/example5.jpg) no-repeat bottom center scroll;
+    background: url(../img/example3.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -87,6 +87,10 @@ a {
 .intro .intro-body .intro-text {
     font-size: 18px;
     margin-top: -1.6em;
+}
+
+.block {
+    background: white;
 }
 
 @media(min-width:768px) {
@@ -220,3 +224,5 @@ footer p {
     padding-bottom: 2em;
     text-align: left;
 }
+
+

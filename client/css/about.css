@@ -1,0 +1,103 @@
+body {
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/*NAVBAR*/
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom a {
+    color: #000;
+}
+
+.navbar-custom .nav li a:hover {
+    color: #964647;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #964647;
+}
+
+/*SOCIAL BUTTONS*/
+.btn-default {
+    color: #000;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6em;
+    margin: -0.55em;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    color: #964647;
+    background-color: #fff;
+}
+
+/*FOOTER*/
+footer {
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/*PROFILE ALIGNMENT*/
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 2em;
+}
+
+.border {
+    margin-top: -4em;
+    padding: 6em;
+}
+
+.social {
+    padding-top: 1em;
+    margin-bottom: -2em;
+}
+
+img {
+    border-radius: 100px;
+    margin-bottom: 1.5em;
+}
+
+.name {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
