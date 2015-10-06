@@ -7,19 +7,16 @@ var Post = new Schema({
   lastName: String,
   position: String,
   company: String,
-  img: [],
-  content: [{
-    question: String,
-    answer: String
-  }],
-  social: [{
+  img: Array,
+  content: Array,
+  social: {
     gitHub: String,
     website: String,
     twitter: String,
     linkedIn: String,
     instagram: String,
     facebook: String
-  }]
+  }
 });
 
 
