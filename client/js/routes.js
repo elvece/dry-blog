@@ -15,7 +15,7 @@ app.config(function($routeProvider){
       templateUrl: 'views/add.html',
       controller: 'mainController'
     })
-    .when('/post', {
+    .when('/post/:firstName', {
       templateUrl: 'views/individual.html',
       controller: 'mainController'
     })

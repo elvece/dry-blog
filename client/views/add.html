@@ -9,21 +9,21 @@
                     <div class="col-sm-5 col-lg-offset-1">
                         <div class="form-group">
                             <label for="text">First Name</label>
-                            <input type="text" id="firstName" class="form-control">
+                            <input type="text" ng-model="newPost.firstName" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="text">Last Name</label>
-                            <input type="text" id="lastName" class="form-control">
+                            <input type="text" ng-model="newPost.lastName" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="text">Title</label>
-                            <input type="text" class="form-control">
+                            <label for="text">Position</label>
+                            <input type="text" ng-model="newPost.position" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="text">Company</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+                            <input type="text" ng-model="newPost.company" class="form-control">
+                        </div><br>
+                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" ng-click="addBlogPost();">Add</button>
                     </div>
 <!--                     <div class="col-sm-5">
                         <div class="form-group">
@@ -45,6 +45,12 @@
                         </div>
                     </div> -->
                 </form>
+            </div>
+            <div ng-repeat="post in posts">
+                <p>{{ post.firstName }}</p>
+                <button type="submit" class="btn btn-sm btn-primary" ng-click="deleteBlogPost(post._id)" id="js-upload-submit">Delete</button>
+                <a class="btn btn-sm btn-primary"href="/#/post/{{post.firstName}}" ng-click="getPost(post._id)">View</a>
+ <!--                <button type="submit" class="btn btn-sm btn-primary" ng-click="go('/post/post.firstName')" id="js-upload-submit">View</button> -->
             </div>
         </div>
     </section>
