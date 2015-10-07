@@ -16,7 +16,8 @@ var app = express();
 
 
 // *** static directory *** //
-app.set('views', path.join(__dirname, 'views'));
+//views server side //
+// app.set('views', path.join(__dirname, 'views'));
 
 
 // *** config middleware *** //
@@ -30,7 +31,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 // *** main routes *** //
 app.use('/api', routes);
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, '../client/views', 'layout.html'));
+  res.sendFile(path.join(__dirname, '../client', 'layout.html'));
 });
 
 // catch 404 and forward to error handler

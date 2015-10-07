@@ -3,19 +3,20 @@
 app.config(function($routeProvider){
   $routeProvider
     .when('/', {
-      templateUrl: 'layout.html',
-      controller: 'mainController'
+      controller: 'mainController',
+      // css: 'css/main.css'
     })
     .when('/about', {
-      templateUrl: 'about.html',
-      controller: 'mainController'
+      templateUrl: 'views/about.html',
+      controller: 'mainController',
+      // css: ['css/main.css', 'css/about.css']
     })
     .when('/add', {
-      templateUrl: 'add.html',
+      templateUrl: 'views/add.html',
       controller: 'mainController'
     })
     .when('/post', {
-      templateUrl: 'individual.html',
+      templateUrl: 'views/individual.html',
       controller: 'mainController'
     })
     .otherwise({
