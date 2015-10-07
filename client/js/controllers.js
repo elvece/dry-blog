@@ -10,19 +10,23 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
       });
   };
 
-
   //get all posts
   $scope.getAllPosts = getPosts('/api/posts');
 
   $scope.getPost = function(id){
-    $scope.test = $filter('filter')($scope.posts, {_id: id});
+    $scope.thisFuckingThing = $filter('filter')($scope.posts, {_id: id});
     // var test = $scope.posts.filter(function(obj){
     //   return $routeParams.firstName === obj.firstName;
     // });
-console.log($scope.test[0].firstName)
+console.log('does this exist? ', $scope.thisFuckingThing)
+console.log(test);
+console.log('should be obj ', test[0]);
+console.log('should be name: ', test[0].firstName);
+
+
   };
 
-
+//function to
 
   $scope.getSingleBlogPost = function(){
     myFactory.get('api/post/' + id)
