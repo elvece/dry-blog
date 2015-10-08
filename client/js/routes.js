@@ -15,9 +15,9 @@ app.config(function($routeProvider){
       templateUrl: 'views/add.html',
       controller: 'mainController'
     })
-    .when('/post/:firstName', {
+    .when('/post/:_id/:firstName', {
       templateUrl: 'views/individual.html',
-      controller: 'mainController'
+      controller: 'postController'
     })
     .otherwise({
       redirectTo: '/'

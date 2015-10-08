@@ -49,8 +49,7 @@
             <div ng-repeat="post in posts">
                 <p>{{ post.firstName }}</p>
                 <button type="submit" class="btn btn-sm btn-primary" ng-click="deleteBlogPost(post._id)" id="js-upload-submit">Delete</button>
-                <a class="btn btn-sm btn-primary"href="/#/post/{{post.firstName}}" ng-click="getPost(post._id)">View</a>
- <!--                <button type="submit" class="btn btn-sm btn-primary" ng-click="go('/post/post.firstName')" id="js-upload-submit">View</button> -->
+                <a class="btn btn-sm btn-primary" href="/#/post/{{post._id}}/{{post.firstName}}" ng-click="">View</a>
             </div>
         </div>
     </section>
