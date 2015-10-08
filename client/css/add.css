@@ -35,10 +35,6 @@
 /*  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
 }
 
-section {
-  padding-top: -2em;
-}
-
 .space {
   padding-right: 0.5em;
   padding-bottom: 1em;
@@ -50,5 +46,23 @@ section {
 
 .arrowSpace {
   padding: 1.2em;
+  margin-bottom: 1em;
+}
+
+#addBtn {
+  background: transparent;
+  border-radius: 100%;
+  border-width: 3px;
+  border-color: black;
+  margin-bottom: 2em;
+}
+
+.inputTitle {
+  margin-bottom: 0.4em;
+  margin-top: 3em;
+}
+
+.title {
+  margin-top: 2em;
   margin-bottom: 1em;
 }
