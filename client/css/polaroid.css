@@ -1,6 +1,7 @@
 
 ul {
   list-style: none;
+
 }
 
 ul.polaroids img {
@@ -22,7 +23,10 @@ ul.polaroids a {
   width: auto;
   padding: 10px 10px 15px;
   text-align: center;
-  font-family: "Marker Felt",sans-serif;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #333;
   font-size: 18px;
