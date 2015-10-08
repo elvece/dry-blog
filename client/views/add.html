@@ -3,11 +3,11 @@
     <section id="interview" class="container content-section text-center">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h2>Add Blog Post</h2>
+                <h2 class="title">Add Blog Post</h2>
             </div>
                 <form role="form">
-                    <section ng-hide="metaForm">
-                        <div class="col-sm-5 col-lg-offset-1">
+                    <section class="sections" ng-hide="metaForm">
+                        <div class="col-sm-4 col-lg-offset-4">
                             <div class="form-group">
                                 <label for="text">First Name</label>
                                 <input type="text" ng-model="newPost.firstName" class="form-control">
@@ -24,39 +24,99 @@
                                 <label for="text">Company</label>
                                 <input type="text" ng-model="newPost.company" class="form-control">
                             </div><br>
-                            <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="metaForm = true; interviewForm = false">Add</button>
+                            <span class="arrowSpace" ng-click="metaForm = true; interviewForm = false">Next<i class="fa fa-arrow-right"></i></span>
                         </div>
                     </section>
-
-                    <section ng-hide="interviewForm">
-                        <div class="col-sm-5 col-lg-offset-1">
-                            <div class="form-group">
-                                <label for="text">New Question</label>
-                                <input type="text" class="form-control" ng-model="question">
+                    <section class="sections"  ng-hide="interviewForm">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="completed">
+                                        <h5>Current Post:</h5>
+                                        <div><strong>First Name:</strong> {{ newPost.firstName }}</div>
+                                        <div><strong>Last Name: </strong>{{ newPost.lastName }}</div>
+                                         <div><strong>Position:</strong> {{ newPost.position }}</div>
+                                        <div><strong>Company:</strong> {{ newPost.company }}</div>
+                                        <br>
+                                        <div><strong>Total Questions: </strong> {{ (newPost.content).length || 0}}</div>
+                                        <div><strong>Total Images: </strong> {{ (newPost.img).length || 0}}</div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" ng-model="question" placeholder="New Question">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea rows="10" type="text" class="form-control" ng-model="answer" placeholder="New Response"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="text">Response</label>
-                                <input type="text" class="form-control" ng-model="answer">
-                            </div><br>
-                             <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="newPostContent()">+</button>
-                             <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="interviewForm = true; photoForm = false">Submit Interview</button>
-                        </div>
-                        <div ng-repeat="content in tempContent">
-                            <ul>
-                                <li>Question: {{ content.question }}</li>
-                                <li>Answer: {{ content.answer }}</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section ng-hide="photoForm">
-                        <div class="col-sm-5 col-lg-offset-1">
-                            <div class="form-group">
-                                <label>Select Files</label>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <button type="submit" class="btn btn-md" id="" ng-click="newPostContent()">+</button>
+                                </div>
                                 <br>
-                                <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="">Upload files</button>
                             </div>
-                        </div><br>
-                        <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="addBlogPost(); go('/')">Add Post</button>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <span class="arrowSpace"><i class="fa fa-arrow-left"></i>Back</span>
+                                    <span type="submit" class="arrowSpace" id="" ng-click="interviewForm = true; photoForm = false">Next<i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div ng-repeat="content in tempContent" class="col-sm-6 allContent">
+                                    <i class="fa fa-remove space"></i>
+                                    <i class="fa fa-pencil-square-o space"></i>
+                                    <br>
+                                    <div class="interviewer">{{ content.question }}</div>
+                                    <div class="interviewee"><strong>{{ newPost.firstName }}:</strong> {{ content.answer }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sections" ng-hide="photoForm">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="completed">
+                                        <h5>Current Post:</h5>
+                                        <div><strong>First Name:</strong> {{ newPost.firstName }}</div>
+                                        <div><strong>Last Name: </strong>{{ newPost.lastName }}</div>
+                                         <div><strong>Position:</strong> {{ newPost.position }}</div>
+                                        <div><strong>Company:</strong> {{ newPost.company }}</div>
+                                        <br>
+                                        <div><strong>Total Questions: </strong> {{ (newPost.content).length || 0}}</div>
+                                        <div><strong>Total Images: </strong> {{ (newPost.img).length || 0}}</div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Select Files</label>
+                                    <br>
+                                    <button type="submit" class="btn btn-sm" id="" ng-click="">Upload files</button>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div ng-repeat="url in img" class="col-sm-6 allContent">
+                                    <i class="fa fa-remove space"></i>
+                                    <br>
+                                    <div>Image {{ img.url }}</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <span class="arrowSpace"><i class="fa fa-arrow-left"></i>Back</span>
+                                    <span ng-click="addBlogPost(); go('/')" class="arrowSpace">Next<i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </form>
             </div><!--closes row-->

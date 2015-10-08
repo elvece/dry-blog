@@ -1,11 +1,7 @@
-.form-group {
+/*.form-group {
   text-align: left;
   display: inline;
-}
-
-.blocks {
-  background-color: gray;
-}
+}*/
 
 .addBtn {
     color: #000;
@@ -22,4 +18,37 @@
 .addBtn:focus {
     color: #964647;
     background-color: #fff;
+}
+
+.title {
+  margin-top: -5em;
+}
+
+.allContent {
+  text-align: left;
+  padding-bottom: -1em;
+}
+
+.completed {
+  text-align: left;
+  font-size: 1.1em;
+/*  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+}
+
+section {
+  padding-top: -2em;
+}
+
+.space {
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.arrowSpace {
+  padding: 1.2em;
+  margin-bottom: 1em;
 }
