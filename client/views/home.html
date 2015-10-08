@@ -1,4 +1,4 @@
-<div ng-repeat="post in posts">
+<!-- <div ng-repeat="post in posts">
     <p>{{ post.firstName }}</p>
     <p>{{ post.lastName }}</p>
     <p>{{ post.position }}</p>
@@ -6,4 +6,23 @@
     <p>{{ post.content }}</p>
     <button type="submit" class="btn btn-sm btn-primary" ng-click="deleteBlogPost(post._id)" id="js-upload-submit">Delete</button>
     <a class="btn btn-sm btn-primary" href="/#/post/{{post._id}}/{{post.firstName}}" ng-click="">View</a>
+</div> -->
+
+<div class="container">
+<section>
+  <div class="row">
+    <ul class="polaroids" ng-repeat="post in posts">
+      <p>{{post.firstName}}</p>
+<!--       <li class="col-lg-3 col-md-4 col-xs-6">
+          <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName post.lastName}}">
+            <img src="{{ post.img }}" alt="Test">
+          </a>
+      </li> -->
+    </ul>
+  </div>
+
+</section>
+
+
+
 </div>
