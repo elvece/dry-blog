@@ -1,6 +1,12 @@
 //MAIN CONTROLLER
 app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter){
 
+  $scope.newPost = {};
+
+  $scope.go = function(marker){
+    $location.path(marker);
+  };
+
   //helper functions
   getPosts = function(url){
     myFactory.get(url)
@@ -10,14 +16,28 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   };
 
   $scope.tempContent = [];
+  $scope.tempImages = [];
 
   $scope.newPostContent = function(){
     var newContent = {question: $scope.question, answer: $scope.answer};
+
     $scope.tempContent.push(newContent);
+    $scope.newPost.content = $scope.tempContent;
     $scope.question = "";
     $scope.answer = "";
-    console.log('new content', newContent);
-    console.log('temp content array', $scope.tempContent);
+    console.log($scope.newPost);
+
+  };
+
+    $scope.newImage = function(){
+    var images = {url: $scope.url};
+
+    $scope.tempImages.push(images);
+    $scope.newPost.content = $scope.tempImages;
+    $scope.question = "";
+    $scope.answer = "";
+    console.log($scope.newPost);
+
   };
 
   //get all posts

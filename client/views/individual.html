@@ -24,16 +24,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>The Interview</h2>
-                <div class="interviewer"> Can you share with us a little bit about your current position and what you are working on?</div>
+                <div ng-repeat="content in post.content">
+                    <div class="interviewer">{{ content.question }}</div>
 
-                <div class="interviewee"><strong>Kate: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis nisl eget porta pharetra. Nullam hendrerit vel nulla in auctor. Curabitur eget vulputate ante. Nunc quis luctus mi. Nulla eleifend efficitur eros sit amet euismod. Cras egestas odio non fringilla euismod. Aenean vel arcu euismod, fringilla enim non, rhoncus lectus. Cras condimentum pretium vehicula. Suspendisse malesuada tortor vel lorem dictum eleifend. </div>
-                <div class="interviewer"> What are you working on outside of your job to continue your personal or professional growth?</div>
+                    <div class="interviewee"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
 
-                <div class="interviewee"><strong>Kate: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis nisl eget porta pharetra. Nullam hendrerit vel nulla in auctor. Curabitur eget vulputate ante. Nunc quis luctus mi. Nulla eleifend efficitur eros sit amet euismod. Cras egestas odio non fringilla euismod. Aenean vel arcu euismod, fringilla enim non, rhoncus lectus. Cras condimentum pretium vehicula. Suspendisse malesuada tortor vel lorem dictum eleifend. </div>
-                <div class="interviewer"> What is a resource you are willing to share with out readers?</div>
-
-                <div class="interviewee"><strong>Kate: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis nisl eget porta pharetra. Nullam hendrerit vel nulla in auctor. Curabitur eget vulputate ante. Nunc quis luctus mi. Nulla eleifend efficitur eros sit amet euismod. Cras egestas odio non fringilla euismod. Aenean vel arcu euismod, fringilla enim non, rhoncus lectus. Cras condimentum pretium vehicula. Suspendisse malesuada tortor vel lorem dictum eleifend. </div>
-
+                </div>
             </div>
         </div>
     </section>

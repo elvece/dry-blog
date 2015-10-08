@@ -18,6 +18,10 @@ app.config(function($routeProvider){
       templateUrl: 'views/individual.html',
       controller: 'postController'
     })
+    .when('/post/:_id/:firstName/interview', {
+      templateUrl: 'views/individual.html',
+      controller: 'postController'
+    })
     .otherwise({
       redirectTo: '/'
     });

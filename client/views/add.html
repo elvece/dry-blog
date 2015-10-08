@@ -41,11 +41,11 @@
                              <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="newPostContent()">+</button>
                              <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="interviewForm = true; photoForm = false">Submit Interview</button>
                         </div>
-                        <div ng-init="newPost.content = tempContent">
-                            <div ng-repeat="question in tempContent">
-                                <p>{{ question }}</p>
-
-                            </div>
+                        <div ng-repeat="content in tempContent">
+                            <ul>
+                                <li>Question: {{ content.question }}</li>
+                                <li>Answer: {{ content.answer }}</li>
+                            </ul>
                         </div>
                     </section>
                     <section ng-hide="photoForm">
@@ -53,10 +53,10 @@
                             <div class="form-group">
                                 <label>Select Files</label>
                                 <br>
-                                <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+                                <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="">Upload files</button>
                             </div>
                         </div><br>
-                        <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="addBlogPost()">Add Post</button>
+                        <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="addBlogPost(); go('/')">Add Post</button>
                     </section>
                 </form>
             </div><!--closes row-->

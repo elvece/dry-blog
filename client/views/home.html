@@ -4,8 +4,6 @@
     <p>{{ post.position }}</p>
     <p>{{ post.company }}</p>
     <p>{{ post.content }}</p>
-    <p>{{ post.content.question }}</p>
-    <p>{{ post.content.answer }}</p>
     <button type="submit" class="btn btn-sm btn-primary" ng-click="deleteBlogPost(post._id)" id="js-upload-submit">Delete</button>
     <a class="btn btn-sm btn-primary" href="/#/post/{{post._id}}/{{post.firstName}}" ng-click="">View</a>
 </div>
