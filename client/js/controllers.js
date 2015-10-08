@@ -1,6 +1,7 @@
+//MAIN CONTROLLER
 app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter){
 
-  //helper function
+  //helper functions
   getPosts = function(url){
     myFactory.get(url)
       .then(function(res){
@@ -8,15 +9,31 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
       });
   };
 
+  $scope.tempContent = [];
+
+  $scope.newPostContent = function(){
+    var newContent = {question: $scope.question, answer: $scope.answer};
+    $scope.tempContent.push(newContent);
+    $scope.question = "";
+    $scope.answer = "";
+    console.log('new content', newContent);
+    console.log('temp content array', $scope.tempContent);
+  };
+
   //get all posts
   $scope.getAllPosts = getPosts('/api/posts');
+  //globals
+  $scope.metaForm = false;
+  $scope.interviewForm = true;
+  $scope.photoForm = true;
 
 
   $scope.addBlogPost = function(){
     myFactory.post('/api/posts', $scope.newPost)
       .then(function(res){
-        console.log(data);
         $scope.posts.push(res.data);
+        console.log(res.data);
+        console.log($scope.posts);
       });
   };
 
@@ -26,8 +43,17 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
         $scope.getAllPosts;
       });
   };
+
+  $scope.addQuestion = function(id){
+    myFactory.put('/api/post/content/' + id)
+      .then(function(res){
+        console.log(res);
+      });
+  };
+
 });
 
+//POST PAGE CONTROLLER
 app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
 
   $scope.thing = $routeParams._id;
@@ -43,4 +69,3 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
 
 });
 
-//how to apply id to partial view (individual page)

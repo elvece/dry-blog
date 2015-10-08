@@ -31,6 +31,8 @@ router.post('/posts', function(req, res, next) {
     lastName: req.body.lastName,
     position: req.body.position,
     company: req.body.company,
+    img: [],
+    content: [],
     social: {
       gitHub: req.body.gitHub,
       website: req.body.website,

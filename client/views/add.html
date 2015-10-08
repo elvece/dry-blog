@@ -6,46 +6,60 @@
                 <h2>Add Blog Post</h2>
             </div>
                 <form role="form">
-                    <div class="col-sm-5 col-lg-offset-1">
-                        <div class="form-group">
-                            <label for="text">First Name</label>
-                            <input type="text" ng-model="newPost.firstName" class="form-control">
+                    <section ng-hide="metaForm">
+                        <div class="col-sm-5 col-lg-offset-1">
+                            <div class="form-group">
+                                <label for="text">First Name</label>
+                                <input type="text" ng-model="newPost.firstName" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Last Name</label>
+                                <input type="text" ng-model="newPost.lastName" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Position</label>
+                                <input type="text" ng-model="newPost.position" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Company</label>
+                                <input type="text" ng-model="newPost.company" class="form-control">
+                            </div><br>
+                            <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="metaForm = true; interviewForm = false">Add</button>
                         </div>
-                        <div class="form-group">
-                            <label for="text">Last Name</label>
-                            <input type="text" ng-model="newPost.lastName" class="form-control">
+                    </section>
+
+                    <section ng-hide="interviewForm">
+                        <div class="col-sm-5 col-lg-offset-1">
+                            <div class="form-group">
+                                <label for="text">New Question</label>
+                                <input type="text" class="form-control" ng-model="question">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Response</label>
+                                <input type="text" class="form-control" ng-model="answer">
+                            </div><br>
+                             <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="newPostContent()">+</button>
+                             <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="interviewForm = true; photoForm = false">Submit Interview</button>
                         </div>
-                        <div class="form-group">
-                            <label for="text">Position</label>
-                            <input type="text" ng-model="newPost.position" class="form-control">
+                        <div ng-init="newPost.content = tempContent">
+                            <div ng-repeat="question in tempContent">
+                                <p>{{ question }}</p>
+
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="text">Company</label>
-                            <input type="text" ng-model="newPost.company" class="form-control">
+                    </section>
+                    <section ng-hide="photoForm">
+                        <div class="col-sm-5 col-lg-offset-1">
+                            <div class="form-group">
+                                <label>Select Files</label>
+                                <br>
+                                <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+                            </div>
                         </div><br>
-                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" ng-click="addBlogPost();">Add</button>
-                    </div>
-<!--                     <div class="col-sm-5">
-                        <div class="form-group">
-
-                    <div class="form-group">
-                        <label>Select Files</label>
-                        <br>
-                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
-                    </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label for="text">New Question</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="text">Response</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div> -->
+                        <button type="submit" class="btn btn-sm btn-primary" id="" ng-click="addBlogPost()">Add Post</button>
+                    </section>
                 </form>
-            </div>
+            </div><!--closes row-->
         </div>
     </section>
 </div>
