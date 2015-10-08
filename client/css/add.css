@@ -1,11 +1,7 @@
-.form-group {
+/*.form-group {
   text-align: left;
   display: inline;
-}
-
-.blocks {
-  background-color: gray;
-}
+}*/
 
 .addBtn {
     color: #000;
@@ -22,4 +18,51 @@
 .addBtn:focus {
     color: #964647;
     background-color: #fff;
+}
+
+.title {
+  margin-top: -5em;
+}
+
+.allContent {
+  text-align: left;
+  padding-bottom: -1em;
+}
+
+.completed {
+  text-align: left;
+  font-size: 1.1em;
+/*  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+}
+
+.space {
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.arrowSpace {
+  padding: 1.2em;
+  margin-bottom: 1em;
+}
+
+#addBtn {
+  background: transparent;
+  border-radius: 100%;
+  border-width: 3px;
+  border-color: black;
+  margin-bottom: 2em;
+}
+
+.inputTitle {
+  margin-bottom: 0.4em;
+  margin-top: 3em;
+}
+
+.title {
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
