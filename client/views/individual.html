@@ -6,9 +6,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="block">
-                            <h1 ng-repeat="shit in thisFuckingThing">{{shit.firstName}}</h1>
-                            <h1 class="brand-heading">{{ thisFuckingThing }}</h1>
-                            <p class="intro-text">Full-Stack Developer, Etsy</p>
+                            <h1 class="brand-heading">{{ post.firstName }}</h1>
+                            <p class="intro-text">{{ post.position }}, {{ post.company }}</p>
                         </div>
                         <a href="#interview" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -18,8 +17,6 @@
             </div>
         </div>
     </header>
-
-    {{posts}}
 
     <!-- Interview Section -->
 <div>
