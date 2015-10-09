@@ -71,13 +71,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
       });
   };
 
-  //UPLOAD
-  $scope.loading = function() {
-    console.log('loading...');
-  };
-  $scope.completed = function(content) {
-    console.log(content);
-  };
+
 });
 
 //POST PAGE CONTROLLER
