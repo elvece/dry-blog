@@ -10,12 +10,11 @@ var Post = new Schema({
   img: [],
   content: [],
   social: {
-    gitHub: String,
+    github: String,
     website: String,
     twitter: String,
-    linkedIn: String,
-    instagram: String,
-    facebook: String
+    linkedin: String,
+    instagram: String
   }
 });
 
