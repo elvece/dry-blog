@@ -109,7 +109,13 @@
                                 <div class="col-sm-6">
                                     <h5>Select Files</h5>
                                     <br>
-                                    <button type="submit" class="btn btn-sm" id="" ng-click="">Upload files</button>
+                                       <form ng-attr-action="/uploads"
+                                         ng-upload="completed(content)"
+                                         ng-upload-loading="loading()">
+                                         <input type="file" name="avatar"></input>
+                                         <input class="btn btn-default" type="submit" value="Upload"
+                                            ng-disabled="$isUploading"></input>
+                                       </form>
                                     <br>
                                     <br>
                                 </div>
