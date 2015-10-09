@@ -29,7 +29,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   };
 
-    $scope.newImage = function(){
+  $scope.newImage = function(){
     var images = {url: $scope.url};
 
     $scope.tempImages.push(images);
@@ -37,16 +37,15 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     $scope.question = "";
     $scope.answer = "";
     console.log($scope.newPost);
-
   };
 
   //get all posts
   $scope.getAllPosts = getPosts('/api/posts');
   //globals
   $scope.metaForm = false;
+  $scope.socialForm = true;
   $scope.interviewForm = true;
   $scope.photoForm = true;
-
 
   $scope.addBlogPost = function(){
     myFactory.post('/api/posts', $scope.newPost)
