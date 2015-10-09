@@ -71,7 +71,6 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
       });
   };
 
-
 });
 
 //POST PAGE CONTROLLER
@@ -89,4 +88,5 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
   getSinglePost($scope.thing);
 
 });
+
 

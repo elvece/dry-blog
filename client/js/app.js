@@ -1,1 +1,1 @@
-var app = angular.module('dryApp', ['ngRoute', 'ngUpload']);
+var app = angular.module('dryApp', ['ngRoute']);
