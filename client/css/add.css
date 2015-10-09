@@ -31,8 +31,8 @@
 
 .completed {
   text-align: left;
-  font-size: 1.1em;
-/*  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font-size: 1em;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .space {

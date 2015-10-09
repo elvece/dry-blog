@@ -4,7 +4,7 @@ body {
     background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .formatFont, .arrowSpace {
 /*    margin: 0 0 35px;*/
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -69,10 +69,17 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 /*FOOTER*/
 footer {
     padding: 1em 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    color: gray;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
