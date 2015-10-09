@@ -8,7 +8,9 @@
     <a class="btn btn-sm btn-primary" href="/#/post/{{post._id}}/{{post.firstName}}" ng-click="">View</a>
 </div> -->
 
-<div class="container">
+<div class="container"><br>
+<h1 class="title text-center">DRY BLOG</h1>
+<p class="text-center">This blog features women in tech. A small intro here. </p>
 <section>
   <div class="row">
     <ul class="polaroids" ng-repeat="post in posts">
@@ -16,7 +18,9 @@
       <li class="">
           <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
             <img src="img/example2.jpg" alt="Test">
+            <button type="submit" class="btn btn-sm btn-default" ng-click="deleteBlogPost(post._id)" id="js-upload-submit">X</button>
           </a>
+
       </li>
 
     </ul>
