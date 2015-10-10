@@ -31,8 +31,8 @@
 
 .completed {
   text-align: left;
-  font-size: 1.1em;
-/*  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font-size: 1em;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .space {
@@ -65,4 +65,8 @@
 .title {
   margin-top: 2em;
   margin-bottom: 1em;
+}
+
+.pad {
+  margin-top: 3.2em;
 }

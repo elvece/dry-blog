@@ -15,12 +15,13 @@
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    padding-top: 0.3em;
+    font-size: 3em;
     margin-top: 6em;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 1.6em;
     margin-top: -1.6em;
 }
 
@@ -54,7 +55,7 @@
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: -.5em;
+    margin-top: 1em;
   /*  padding: 7px 16px;*/
 /*    border: 2px solid #000;
     border-radius: 100%!important;*/
