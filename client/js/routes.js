@@ -10,6 +10,10 @@ app.config(function($routeProvider){
       templateUrl: 'views/about.html',
       controller: 'mainController',
     })
+    .when('/why', {
+      templateUrl: 'views/why.html',
+      controller: 'mainController',
+    })
     .when('/add', {
       templateUrl: 'views/add.html',
       controller: 'mainController'

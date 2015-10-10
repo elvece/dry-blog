@@ -34,12 +34,11 @@ router.post('/posts', function(req, res, next) {
     img: req.body.img,
     content: req.body.content,
     social: {
-      gitHub: req.body.gitHub,
+      github: req.body.github,
       website: req.body.website,
       twitter: req.body.twitter,
-      linkedIn: req.body.linkedIn,
-      instagram: req.body.instagram,
-      facebook: req.body.facebook
+      linkedin: req.body.linkedin,
+      instagram: req.body.instagram
     }
   })
     .save()
