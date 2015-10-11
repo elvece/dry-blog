@@ -1,3 +1,4 @@
+* change next click on final add step to finish post and direct to new interview page
 * file upload
 * auth
 * fix polaroid tilts

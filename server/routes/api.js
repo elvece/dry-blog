@@ -32,6 +32,7 @@ router.post('/posts', function(req, res, next) {
     position: req.body.position,
     company: req.body.company,
     img: req.body.img,
+    homeImage: req.body.homeImage,
     content: req.body.content,
     social: {
       github: req.body.github,
