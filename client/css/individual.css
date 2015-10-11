@@ -6,7 +6,7 @@
     padding: 100px 0;
     text-align: center;
     color: #000;
-    background: url(../img/example3.jpg) no-repeat bottom center scroll;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

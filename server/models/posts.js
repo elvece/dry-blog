@@ -7,7 +7,7 @@ var Post = new Schema({
   lastName: String,
   position: String,
   company: String,
-  img: [],
+  img: String,
   content: [],
   social: {
     github: String,

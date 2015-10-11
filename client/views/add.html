@@ -135,21 +135,26 @@
                                                 <br>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <h5>Select Files</h5>
-                                            <br>
-                                            <button type="submit" class="btn btn-sm" id="" ng-click="">Upload files</button>
-                                            <br>
-                                            <br>
+                                        <div class="col-sm-offset-1 col-sm-4">
+                                            <div class="imgPath">
+                                            <!-- <h5>Select Files</h5> -->
+                                            <!-- <div class="form-group"> -->
+                                                <h5 class="inputTitle">Image Path</h5>
+                                                <input type="text" ng-model="newPost.img" class="form-control" placeholder="url(../img/example.jpg)">
+                                            <!-- </div> -->
+                                          <!--   <button type="submit" class="btn btn-sm" id="" ng-click="">Upload files</button>
+ -->                                            <br>
+                                                <br>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+<!--                                     <div class="row">
                                         <div ng-repeat="url in img" class="col-sm-6 allContent">
                                             <i class="fa fa-remove space"></i>
                                             <br>
                                             <div>Image {{ img.url }}</div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <span class="arrowSpace highlight" ng-click="interviewForm = false; photoForm = true"><i class="fa fa-arrow-left"></i> Back</span>
