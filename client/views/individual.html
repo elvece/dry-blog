@@ -1,12 +1,12 @@
 
     <!-- PROFILE IMAGE SECTION -->
-    <header class="intro">
+    <header class="intro imgFormat" ng-style="{'background': post.img, 'background-repeat': 'no-repeat', 'background-size': 'cover', 'background-attachment': 'scroll', 'background-position': 'center'}">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="block">
-                            <h1 class="brand-heading">{{ post.firstName }}</h1>
+                            <h1 class="brand-heading">{{ post.firstName }} {{ post.lastName}}</h1>
                             <p class="intro-text">{{ post.position }}, {{ post.company }}</p>
                         </div>
                         <a href="#interview" class="btn btn-circle page-scroll">
