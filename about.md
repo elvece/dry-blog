@@ -14,3 +14,5 @@ Progress forward.
 
 
 A gradulate of Psychology and Art, Lucy decided to enter the world of tech when she discovered the incredible combination of creativity and problem solving though code (and thought it quite and decided to pursue development as a career. Currently a MEAN Stack Developer (in training), Lucy is motivated to accent her learning by meeting individuals in this community and conversing about their experiences.
+
+I am about always continuing to learn (and generate personal growth) and creating things to build.
