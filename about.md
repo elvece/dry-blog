@@ -1,10 +1,13 @@
 D/on't R/epeat Y/ourself
 
+BE ORIGINAL.
+
 DRY Blog was created as a resource for women in the tech space. There are too many stories that go untold about accomplishments in this growing field. Our hope is that DRY Blog will serve as inspiration for anyone looking to expand their knowledge, contributions, and impact on the surrounding community.
 
 
+//ON HOME PAGE//
 DRY Blog features women in the Denver tech space. These exclusive interviews delve into the experiences that have shaped the foremost women in this scene with the intention of providing a resource to other women already in the field or those considering an introduction.
-
+//////////////////////////////////////////////////
 
 We hope to enlighten our readers as to what these successful ladies have faced during their journey and also present their insights into the world of technology.
 

@@ -18,6 +18,28 @@ p {
     line-height: 1.5;
 }
 
+.home-blurb {
+    width: 1000px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home-title {
+    font-weight: 100;
+}
+
+.main-view {
+    height: 800px;
+
+}
+
+strong {
+    font-size: 5em;
+}
+
 a, .highlight, .navbar-custom .nav li.active a:hover {
     color: #964647;
 }

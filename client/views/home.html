@@ -1,24 +1,50 @@
 
 <div class="container"><br>
-  <h1 class="title text-center">DRY BLOG</h1>
-  <p class="text-center">
-
-
-  </p>
-  <section>
-    <div class="row">
-      <ul class="polaroids" ng-repeat="post in posts">
-
-        <li>
-            <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
-              <img src="img/example2.jpg" alt="Test">
-              <button type="submit" class="btn btn-sm btn-default"  id="js-upload-submit">X</button>
-            </a>
-        </li>
-
-      </ul>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 center border">
+      <div class="main-view">
+        <h1 class="title text-center home-title text-center">
+          <strong>D/</strong>on't<br>
+          <strong>R/</strong>epeat<br>
+          <strong>&nbsp;Y/</strong>ourself<br>
+        </h1>
+        <a href="#/#content" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+  <a name="content"></a>
+  <div class="main-view">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 center border home-blurb">
+        <p>
+        DRY Blog features women in the Denver tech space.
+        </p>
+        <p>
+        These exclusive interviews delve into the experiences that have shaped the foremost women in this scene with the intention of providing a resource to other women already in the field or those considering an introduction.
+        </p>
+        <p>
+        Find our most recent interviews below!
+        </p>
+        <br><br><hr><br><br>
+      </div>
+    </div>
+    <section>
+      <div class="row">
+        <ul class="polaroids" ng-repeat="post in posts">
+
+          <li>
+              <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
+                <img src="img/example2.jpg" alt="Test">
+                <button type="submit" class="btn btn-sm btn-default"  id="js-upload-submit">X</button>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br><br>
+  </div>
 </div>
 
 <!-- for delete functionality -->
