@@ -19,7 +19,7 @@ p {
 }
 
 .home-blurb {
-    width: 1000px;
+    width: 800px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 2px;
@@ -32,11 +32,11 @@ p {
 }
 
 .main-view {
-    height: 800px;
+    height: 780px;
 
 }
 
-strong {
+.dry {
     font-size: 5em;
 }
 

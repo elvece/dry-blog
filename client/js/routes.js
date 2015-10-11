@@ -10,8 +10,8 @@ app.config(function($routeProvider){
       templateUrl: 'views/about.html',
       controller: 'mainController',
     })
-    .when('/why', {
-      templateUrl: 'views/why.html',
+    .when('/authors', {
+      templateUrl: 'views/authors.html',
       controller: 'mainController',
     })
     .when('/add', {
