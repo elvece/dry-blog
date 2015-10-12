@@ -48,23 +48,17 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   $scope.photoForm = true;
 
   $scope.addBlogPost = function(){
-    console.log('does this work');
-    // var blog;
-    myFactory.post('/api/posts', $scope.newPost)
-      .then(function(res){
-        console.log("hi");
-        // var blog = res.data;
-        // console.log(blog);
-        $scope.posts.push(res.data);
-        // var blog = res.data;
-    });
-      // go('/#/post/' + blog._id + '/' + blog.firstName);
+    $http.post('/api/posts', $scope.newPost)
+      .then(function(data){
+        var blog = data.data[0];
+        go('/post/' + blog._id + '/' + blog.firstName);
+      });
   };
 
   $scope.deleteBlogPost = function(id){
     myFactory.delete('/api/post/' + id)
       .then(function(res){
-        $scope.getAllPosts;
+        $scope.getAllPosts();
       });
   };
 
