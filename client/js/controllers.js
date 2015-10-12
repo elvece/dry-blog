@@ -48,7 +48,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   $scope.photoForm = true;
 
   $scope.addBlogPost = function(){
-    $http.post('/api/posts', $scope.newPost)
+    myFactory.post('/api/posts', $scope.newPost)
       .then(function(data){
         var blog = data.data[0];
         go('/post/' + blog._id + '/' + blog.firstName);
