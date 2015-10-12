@@ -31,18 +31,17 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   $scope.deleteQuestion = function() {
     var index = this.$index;
     $scope.tempContent.splice(index, 1);
-  }
+  };
 
   $scope.editQuestion = function() {
     $scope.question = this.content.question;
     $scope.answer = this.content.answer;
     var index = this.$index;
     $scope.tempContent.splice(index, 1);
-  }
+  };
 
   $scope.newImage = function(){
     var images = {url: $scope.url};
-
     $scope.tempImages.push(images);
     $scope.newPost.content = $scope.tempImages;
     $scope.question = "";
