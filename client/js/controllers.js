@@ -20,14 +20,25 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.newPostContent = function(){
     var newContent = {question: $scope.question, answer: $scope.answer};
-
     $scope.tempContent.push(newContent);
     $scope.newPost.content = $scope.tempContent;
     $scope.question = "";
     $scope.answer = "";
-    console.log($scope.newPost);
-
+    console.log(newContent);
+    console.log($scope.tempContent);
   };
+
+  $scope.deleteQuestion = function() {
+    var index = this.$index;
+    $scope.tempContent.splice(index, 1);
+  }
+
+  $scope.editQuestion = function() {
+    $scope.question = this.content.question;
+    $scope.answer = this.content.answer;
+    var index = this.$index;
+    $scope.tempContent.splice(index, 1);
+  }
 
   $scope.newImage = function(){
     var images = {url: $scope.url};
