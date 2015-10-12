@@ -7,6 +7,8 @@
 * search on homepage
 * edit/delete blog post from current page when admin logged in
 * company url when adding blog post
+* time stamps
+* prepend new posts on homepage
 
 LONG TERM:
 * comments

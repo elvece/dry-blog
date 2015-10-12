@@ -12,3 +12,14 @@ hr {
 .whyP {
   margin-top: -1.2em;
 }
+
+.p-pad-fix {
+  padding: 10px;
+}
+
+.norm {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
