@@ -9,6 +9,7 @@
 * company url when adding blog post
 * time stamps
 * prepend new posts on homepage
+* fix blog post page urls to just be first name
 
 LONG TERM:
 * comments

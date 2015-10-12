@@ -53,6 +53,8 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
         $scope.posts.push(res.data);
         console.log(res.data);
         console.log($scope.posts);
+        console.log(res.data._id);
+        // return '/post/' + res.data._id + '/' + res.data.firstName;
       });
   };
 
