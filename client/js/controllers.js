@@ -3,7 +3,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.newPost = {};
 
-  $scope.go = function(marker){
+  go = function(marker){
     $location.path(marker);
   };
 
@@ -48,14 +48,17 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   $scope.photoForm = true;
 
   $scope.addBlogPost = function(){
+    console.log('does this work');
+    // var blog;
     myFactory.post('/api/posts', $scope.newPost)
       .then(function(res){
+        console.log("hi");
+        // var blog = res.data;
+        // console.log(blog);
         $scope.posts.push(res.data);
-        console.log(res.data);
-        console.log($scope.posts);
-        console.log(res.data._id);
-        // return '/post/' + res.data._id + '/' + res.data.firstName;
-      });
+        // var blog = res.data;
+    });
+      // go('/#/post/' + blog._id + '/' + blog.firstName);
   };
 
   $scope.deleteBlogPost = function(id){
@@ -85,6 +88,8 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
         $scope.post = res.data;
       });
   };
+
+
 
   getSinglePost($scope.thing);
 
