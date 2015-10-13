@@ -22,7 +22,7 @@ p {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .y {
@@ -34,11 +34,11 @@ p {
 }
 
 .main-view {
-    margin-top: -4em;
+    margin-top: -4.5em;
 }
 
 .dry {
-    font-size: 3.8em;
+    font-size: 3em;
 }
 
 a, .highlight, .navbar-custom .nav li.active a:hover {
@@ -110,3 +110,7 @@ footer p {
     margin-top: 3.5em;
 }
 
+
+.homeArrow {
+    margin-top: 0;
+}
