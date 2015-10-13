@@ -114,3 +114,8 @@ footer p {
 .homeArrow {
     margin-top: 0;
 }
+
+.btn-circle:focus {
+    outline: none;
+    box-shadow: none;
+}
