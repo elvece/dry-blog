@@ -1,40 +1,33 @@
 
-<div class="container"><br>
+<div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 center border">
       <div class="main-view">
-        <h1 class="title text-center home-title text-center">
-          <strong class="jumbo">D/</strong>on't<br>
-          <strong class="jumbo">R/</strong>epeat<br>
-          <strong class="jumbo">&nbsp;Y/</strong>ourself<br>
+        <h1 class="title text-center home-title">
+          <strong class="dry">D/</strong>on't<br>
+          <strong class="dry">R/</strong>epeat<br>
+          <strong class="dry y">Y/</strong>ourself<br>
         </h1>
-        <a href="#/#content" class="btn btn-circle page-scroll">
+        <hr>
+      </div>
+      <div class="home-blurb">
+          <p>
+          DRY Blog features women in the Denver tech space.
+          </p>
+          <p>
+          These exclusive interviews delve into the experiences that have shaped the foremost women in this scene with the intention of providing a resource to other women already in the field or those considering an introduction.
+          </p>
+          <a href="#/#content" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
-        </a>
+          </a>
       </div>
     </div>
   </div>
   <a name="content"></a>
-  <div class="main-view">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 center home-blurb">
-        <p>
-        DRY Blog features women in the Denver tech space.
-        </p>
-        <p>
-        These exclusive interviews delve into the experiences that have shaped the foremost women in this scene with the intention of providing a resource to other women already in the field or those considering an introduction.
-        </p>
-        <p>
-        Find our most recent interviews below!
-        </p>
-        <br><br><hr><br>
-      </div>
-    </div>
     <section>
       <div class="row">
-        <ul class="polaroids" ng-repeat="post in posts">
-
-          <li>
+        <ul class="polaroids">
+          <li ng-repeat="post in posts">
               <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
                 <img ng-src="{{post.homeImage}}" alt="Image">
 
@@ -42,9 +35,7 @@
           </li>
         </ul>
       </div>
-    </section>
-    <br><br>
-  </div>
+  </section>
 </div>
 
 <!-- for delete functionality -->
