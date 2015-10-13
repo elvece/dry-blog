@@ -43,7 +43,7 @@ router.post('/posts', function(req, res, next) {
       instagram: req.body.instagram
     }
   })
-    .save()
+    .saveQ()
     .then(function(results){
       res.json(results);
     }).catch(function(results){

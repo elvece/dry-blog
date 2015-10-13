@@ -3,7 +3,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.newPost = {};
 
-  $scope.go = function(marker){
+  go = function(marker){
     $location.path(marker);
   };
 
@@ -59,16 +59,20 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.addBlogPost = function(){
     myFactory.post('/api/posts', $scope.newPost)
-      .then(function(res){
-        $scope.posts.push(res.data);
-        console.log($scope.posts);
+      .then(function(data){
+        var blog = data.data[0];
+        go('/post/' + blog._id + '/' + blog.firstName);
       });
+      // .then(function(res){
+      //   $scope.posts.push(res.data);
+      //   console.log($scope.posts);
+      // });
   };
 
   $scope.deleteBlogPost = function(id){
     myFactory.delete('/api/post/' + id)
       .then(function(res){
-        $scope.getAllPosts;
+        $scope.getAllPosts();
       });
   };
 
@@ -92,6 +96,8 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
         $scope.post = res.data;
       });
   };
+
+
 
   getSinglePost($scope.thing);
 
