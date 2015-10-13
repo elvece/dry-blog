@@ -61,7 +61,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     myFactory.post('/api/posts', $scope.newPost)
       .then(function(res){
         $scope.posts.push(res.data);
-        console.log(res.data);
+        console.log(moment().startOf('day').fromNow());
         console.log($scope.posts);
       });
   };

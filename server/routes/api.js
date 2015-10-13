@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Post = require('../models/posts.js');
 
+
 //get all blog interviews
 router.get('/posts', function(req, res, next) {
   Post.findQ()

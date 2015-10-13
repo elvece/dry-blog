@@ -11,6 +11,9 @@
         <hr>
       </div>
       <div class="home-blurb">
+          <div class="jumbotron">
+            <p>The time is {{ main.time }}</p>
+          </div>
           <p>
           DRY Blog features women in the Denver tech space.
           </p>
@@ -31,6 +34,7 @@
           <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
             <img src="{{post.homeImage}}" alt="Image">
           </a>
+          <p>{{post.time}}</p>
         </li>
       </ul>
     </div>
