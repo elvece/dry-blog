@@ -5,7 +5,6 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.toTheTop = function() {
     $document.scrollTopAnimated(0, 1400).then(function() {
-      console.log('You just scrolled to the top!');
     });
   };
 
