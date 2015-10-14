@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="buffer">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="buffer" ng-controller="mainController">
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -23,7 +23,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" du-smooth-scroll>DRY <span class="light">BLOG</span>
+                <a class="navbar-brand page-scroll" href="/#/" ng-click="toTheTop()" >DRY <span class="light">BLOG</span>
                 </a>
             </div>
 
@@ -38,13 +38,13 @@
                         <a class="page-scroll" href="/#/#content">Interviews</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about" ng-click="toTheTop()">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#authors">Authors</a>
+                        <a class="page-scroll" href="#authors" ng-click="toTheTop()">Authors</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#twitter">Twitter</a>
+                        <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
                     </li>
                 </ul>
             </div>
