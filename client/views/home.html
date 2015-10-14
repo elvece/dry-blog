@@ -27,9 +27,13 @@
     <div class="row">
       <ul class="polaroids">
         <li ng-repeat="post in posts">
-          <a href="/#/post/{{post._id}}/{{post.firstName}}" title="{{ post.firstName }} {{ post.lastName }}">
+          <a href="/#/post/{{post._id}}/{{post.firstName}}">
             <img ng-src="{{post.homeImage}}" alt="Image">
+            <span class="polaroidTitle"> {{post.firstName}}  {{post.lastName}}</span>
+            <br>
+            <span class="polaroidSubtitle"> {{post.position}}, {{post.company}}</span>
           </a>
+
         </li>
       </ul>
     </div>

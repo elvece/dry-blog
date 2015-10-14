@@ -113,3 +113,6 @@ ul.polaroids a {
 
 /*ul.polaroids li {display:inline;}*/
 
+.polaroidSubtitle {
+  font-size: 0.6em;
+}
