@@ -103,6 +103,9 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
       });
   };
 
+  $scope.time = function(id){
+   return new Date(parseInt(id.substring(0, 8), 16) * 1000);
+  }
 
 
   getSinglePost($scope.thing);
