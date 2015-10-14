@@ -47,11 +47,11 @@ p {
     font-size: 3em;
 }
 
-/*.jumbo-border {
-    padding-top: 6em;
-    padding-left: 6em;
-    padding-right: 6em;
-}*/
+.jumbo-border {
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
 
 a, .highlight, .navbar-custom .nav li.active a:hover {
     color: #964647;
