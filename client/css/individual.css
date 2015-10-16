@@ -154,6 +154,11 @@
     background-color: #fff;
 }
 
+.summaryDiv {
+    text-align: center;
+    font-style: italic;
+}
 
-
-
+.summaryText {
+    text-align: left;
+}

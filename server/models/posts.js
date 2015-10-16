@@ -10,6 +10,7 @@ var Post = new Schema({
   img: String,
   homeImage: String,
   content: [],
+  summary: String,
   social: {
     github: String,
     website: String,
