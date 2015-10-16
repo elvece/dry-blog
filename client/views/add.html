@@ -9,6 +9,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <form role="form">
+
+                    <!-- META FORM -->
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <section class="sections" ng-hide="metaForm">
@@ -28,12 +30,15 @@
                                     <div class="form-group">
                                         <h5 class="inputTitle">Company</h5>
                                         <input type="text" ng-model="newPost.company" class="form-control">
-                                    </div><br>
+                                    </div>
+                                    <br>
                                     <span class="arrowSpace highlight" ng-click="metaForm = true; socialForm = false">Next <i class="fa fa-arrow-right"></i></span>
                                 </div>
                             </section>
                         </div>
                     </div>
+
+                    <!-- SOCIAL FORM -->
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <section class="sections" ng-hide="socialForm">
@@ -56,31 +61,30 @@
                                     </div>
                                     <br>
                                     <span class="arrowSpace highlight" ng-click="socialForm = true; metaForm = false"><i class="fa fa-arrow-left"></i> Back</span>
-                                    <span type="submit" class="arrowSpace highlight" ng-click="socialForm = true; interviewForm = false">Next <i class="fa fa-arrow-right"></i></span>
+                                    <span type="submit" class="arrowSpace highlight" ng-click="socialForm = true; summaryForm = false">Next <i class="fa fa-arrow-right"></i></span>
                                 </div>
                             </section>
                         </div>
                     </div>
 
-                   <!-- SUMMARY  -->
+                   <!-- SUMMARY FORM  -->
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <section class="sections" ng-hide="summaryForm">
                                 <div class="col-xs-8 col-xs-offset-2">
                                     <div class="form-group">
                                         <h5 class="inputTitle">Summary</h5>
-                                        <textarea id="summaryInput" rows="10" type="text" class="form-control" ng-model="newPost.summary" placeholder="Add summary here"></textarea>
+                                        <textarea rows="10" type="text" class="form-control" ng-model="newPost.summary" placeholder="Add summary here"></textarea>
                                     </div>
                                     <br>
-                                    <span class="arrowSpace highlight" ng-click="summaryForm = true; metaForm = false"><i class="fa fa-arrow-left"></i> Back</span>
-                                    <span type="submit" class="arrowSpace highlight" ng-click="socialForm = true; interviewForm = false">Next <i class="fa fa-arrow-right"></i></span>
+                                    <span class="arrowSpace highlight" ng-click="summaryForm = true; socialForm = false"><i class="fa fa-arrow-left"></i> Back</span>
+                                    <span type="submit" class="arrowSpace highlight" ng-click="summaryForm = true; interviewForm = false">Next <i class="fa fa-arrow-right"></i></span>
                                 </div>
                             </section>
                         </div>
                     </div>
 
-
-
+                    <!-- INTERVIEW FORM -->
                     <div class="row">
                         <div>
                             <section class="sections"  ng-hide="interviewForm">
@@ -135,6 +139,8 @@
                             </section>
                         </div>
                     </div>
+
+                    <!-- PHOTO FORM -->
                     <div class="row">
                         <div>
                             <section class="sections" ng-hide="photoForm">
