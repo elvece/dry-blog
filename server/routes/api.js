@@ -35,6 +35,7 @@ router.post('/posts', function(req, res, next) {
     img: req.body.img,
     homeImage: req.body.homeImage,
     content: req.body.content,
+    summary: req.body.summary,
     social: {
       github: req.body.github,
       website: req.body.website,

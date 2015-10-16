@@ -61,6 +61,26 @@
                             </section>
                         </div>
                     </div>
+
+                   <!-- SUMMARY  -->
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <section class="sections" ng-hide="summaryForm">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="form-group">
+                                        <h5 class="inputTitle">Summary</h5>
+                                        <textarea id="summaryInput" rows="10" type="text" class="form-control" ng-model="newPost.summary" placeholder="Add summary here"></textarea>
+                                    </div>
+                                    <br>
+                                    <span class="arrowSpace highlight" ng-click="summaryForm = true; metaForm = false"><i class="fa fa-arrow-left"></i> Back</span>
+                                    <span type="submit" class="arrowSpace highlight" ng-click="socialForm = true; interviewForm = false">Next <i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+
+
                     <div class="row">
                         <div>
                             <section class="sections"  ng-hide="interviewForm">
@@ -98,7 +118,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-8 col-sm-offset-2">
-                                            <span class="arrowSpace highlight" ng-click="interviewForm = true; socialForm = false"><i class="fa fa-arrow-left"></i> Back</span>
+                                            <span class="arrowSpace highlight" ng-click="interviewForm = true; summaryForm = false"><i class="fa fa-arrow-left"></i> Back</span>
                                             <span type="submit" class="arrowSpace highlight" id="" ng-click="interviewForm = true; photoForm = false">Next <i class="fa fa-arrow-right"></i></span>
                                         </div>
                                     </div>

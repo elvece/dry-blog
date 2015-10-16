@@ -25,14 +25,14 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>The Interview</h2>
                 Posted <span am-time-ago="time"></span>
-                <div class="summary">
-                   <p>Bree is a long time developer and recovering marketing director.</p>
+                <div class="summaryDiv">
+                   <p class="summaryText">
+                       {{ post.summary }}
+                   </p>
                 </div>
                 <div ng-repeat="content in post.content">
                     <div class="interviewer">{{ content.question }}</div>
-
                     <div class="interviewee"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
-
                 </div>
             </div>
         </div>
