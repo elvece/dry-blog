@@ -22,11 +22,11 @@ app.config(function($routeProvider){
       templateUrl: 'views/twitter.html',
       controller: 'mainController'
     })
-    .when('/post/:_id/:firstName', {
-      templateUrl: 'views/individual.html',
-      controller: 'postController'
-    })
-    .when('/post/:_id/:firstName/interview', {
+    // .when('/post/:_id/:firstName', {
+    //   templateUrl: 'views/individual.html',
+    //   controller: 'postController'
+    // })
+    .when('/post/:lastName/:firstName', {
       templateUrl: 'views/individual.html',
       controller: 'postController'
     })
