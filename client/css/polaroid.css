@@ -9,7 +9,7 @@ ul {
 
 ul.polaroids img {
   display: block;
-  width: 250px;
+  width: 280px;
   margin-bottom: 12px;
 }
 
@@ -57,9 +57,9 @@ ul.polaroids li:nth-child(3n) a {
 
 /* Rotate every fifth image by 5 degrees and offset it */
 ul.polaroids li:nth-child(5n) a {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  transform: rotate(5deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
   position: relative;
   right: 5px;
 }
