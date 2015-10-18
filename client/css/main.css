@@ -23,6 +23,12 @@ p {
     line-height: 1.5;
 }
 
+#logo {
+    max-width: 60%;
+    padding-left: 7%;
+    margin-top: 8%;
+}
+
 .home-blurb {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -30,20 +36,8 @@ p {
     font-size: 0.8em;
 }
 
-.y {
-    padding-left: 7%;
-}
-
-.home-title {
-    font-weight: 100;
-}
-
 .main-view {
     margin-top: -4.5em;
-}
-
-.dry {
-    font-size: 3em;
 }
 
 .jumbo-border {
