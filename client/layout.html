@@ -3,6 +3,7 @@
 
 <head>
     <title>DRY</title>
+    <base href="/">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -23,7 +24,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="/#/" ng-click="toTheTop()" >DRY <span class="light">BLOG</span>
+                <a class="navbar-brand page-scroll" href="/" ng-click="toTheTop()" >DRY <span class="light">BLOG</span>
                 </a>
             </div>
 
@@ -35,13 +36,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#/#content">Interviews</a>
+                        <a class="page-scroll" href="/">Interviews</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about" ng-click="toTheTop()">About</a>
+                        <a class="page-scroll" href="/about" ng-click="toTheTop()">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#authors" ng-click="toTheTop()">Authors</a>
+                        <a class="page-scroll" href="/authors" ng-click="toTheTop()">Authors</a>
                     </li>
                     <!--<li>
                         <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
