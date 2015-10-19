@@ -16,7 +16,6 @@ router.get('/posts', function(req, res, next) {
 
 //get single blog interview
 router.get('/post/:lastName', function(req, res, next) {
-  console.log(req.params);
   Post.findOneQ(req.params)
     .then(function(results){
       res.json(results);
