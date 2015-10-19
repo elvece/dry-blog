@@ -16,7 +16,7 @@ var Post = new Schema({
     website: String,
     twitter: String,
     linkedin: String,
-    instagram: String
+    instagram: String,
   }
 });
 

@@ -49,17 +49,20 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <ul class="list-inline banner-social-buttons">
-                    <li>
+                    <li ng-show="post.social.twitter.length > 0">
                         <a href="{{ post.social.twitter }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                     </li>
-                    <li>
+                    <li ng-show="post.social.github.length > 0">
                         <a href="{{ post.social.github }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
                     </li>
-                    <li>
+                    <li ng-show="post.social.instagram.length > 0">
                         <a href="{{ post.social.instagram }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
                     </li>
-                    <li>
+                    <li ng-show="post.social.linkedin.length > 0">
                         <a href="{{ post.social.linkedin }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+                    </li>
+                    <li ng-show="post.social.website.length > 0">
+                        <a href="{{ post.social.website }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-globe fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                 </ul>
             </div>
