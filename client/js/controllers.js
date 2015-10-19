@@ -66,7 +66,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     myFactory.post('/api/posts', $scope.newPost)
       .then(function(data){
         var blog = data.data[0];
-        go('/post/' + blog._id + '/' + blog.firstName);
+        go('/post/' + blog.lastName + '/' + blog.firstName);
       });
       // .then(function(res){
       //   $scope.posts.push(res.data);
