@@ -1,6 +1,6 @@
 // var appRoutes = angular.module('routes', ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'views/home.html',
@@ -22,15 +22,13 @@ app.config(function($routeProvider){
       templateUrl: 'views/twitter.html',
       controller: 'mainController'
     })
-    .when('/post/:_id/:firstName', {
-      templateUrl: 'views/individual.html',
-      controller: 'postController'
-    })
-    .when('/post/:_id/:firstName/interview', {
+    .when('/post/:lastName/:firstName', {
       templateUrl: 'views/individual.html',
       controller: 'postController'
     })
     .otherwise({
       redirectTo: '/'
     });
+
+    $locationProvider.html5Mode(true);
 });

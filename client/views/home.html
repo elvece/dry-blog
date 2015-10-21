@@ -1,13 +1,9 @@
 
 <div class="container wrap">
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 center border">
+    <div class="col-sm-8 col-sm-offset-2 center jumbo-border">
       <div class="main-view">
-        <h1 class="title text-center home-title">
-          <strong class="dry">D/</strong>on't<br>
-          <strong class="dry">R/</strong>epeat<br>
-          <strong class="dry y">Y/</strong>ourself<br>
-        </h1>
+        <img id="logo" ng-src="../img/dry_logo.png">
         <hr>
       </div>
       <div class="home-blurb">
@@ -17,7 +13,7 @@
           <p>
           These exclusive interviews delve into the experiences that have shaped the foremost women in this scene with the intention of providing a resource to other women already in the field or those considering an introduction.
           </p>
-          <a href="#/#content" class="btn btn-circle page-scroll homeArrow" du-smooth-scroll>
+          <a href="#content" class="btn btn-circle page-scroll homeArrow" du-smooth-scroll>
             <i class="fa fa-angle-double-down animated"></i>
           </a>
       </div>
@@ -26,8 +22,8 @@
   <section id="content">
     <div class="row">
       <ul class="polaroids">
-        <li ng-repeat="post in posts | orderBy:'time'">
-          <a href="/#/post/{{post._id}}/{{post.firstName}}" class="text-center">
+        <li ng-repeat="post in posts">
+          <a href="/post/{{post.lastName}}/{{post.firstName}}" class="text-center" ng-click="toTheTop()">
             <img ng-src="{{post.homeImage}}" alt="Image">
             <div class="polaroidTitle">{{post.firstName}}  {{post.lastName}}</div>
             <div class="polaroidSubtitle">{{post.position}}, {{post.company}}</div>

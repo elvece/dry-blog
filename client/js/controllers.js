@@ -3,11 +3,10 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   $scope.newPost = {};
 
-  // $scope.toTheTop = function() {
-  //   $document.scrollTopAnimated(1400).then(function() {
-  //     console.log('You just scrolled to the top!');
-  //   });
-  // };
+  $scope.toTheTop = function() {
+    $document.scrollTopAnimated(0, 1400).then(function() {
+    });
+  };
 
   go = function(marker){
     $location.path(marker);
@@ -67,7 +66,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     myFactory.post('/api/posts', $scope.newPost)
       .then(function(data){
         var blog = data.data[0];
-        go('/post/' + blog._id + '/' + blog.firstName);
+        go('/post/' + blog.lastName + '/' + blog.firstName);
       });
       // .then(function(res){
       //   $scope.posts.push(res.data);
@@ -93,8 +92,10 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
 //POST PAGE CONTROLLER
 app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
-  $scope.thing = $routeParams._id;
-  $scope.time = (new Date(parseInt($scope.thing.substring(0, 8), 16) * 1000));
+  // $scope.thing = $routeParams._id;
+  // $scope.time = (new Date(parseInt($scope.thing.substring(0, 8), 16) * 1000));
+
+  $scope.last = $routeParams.lastName;
 
   getSinglePost = function(id){
     myFactory.get('/api/post/' + id)
@@ -103,11 +104,7 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
       });
   };
 
-
-
-
-
-  getSinglePost($scope.thing);
+  getSinglePost($scope.last);
 
 });
 

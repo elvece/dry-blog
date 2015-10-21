@@ -3,19 +3,20 @@
 
 <head>
     <title>DRY</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/individual.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/add.css">
-    <link rel="stylesheet" type="text/css" href="css/authors.css">
-    <link rel="stylesheet" type="text/css" href="css/polaroid.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/individual.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/add.css">
+    <link rel="stylesheet" type="text/css" href="./css/authors.css">
+    <link rel="stylesheet" type="text/css" href="./css/polaroid.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="buffer">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="buffer" ng-controller="mainController">
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -23,7 +24,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" du-smooth-scroll>DRY <span class="light">BLOG</span>
+                <a class="navbar-brand page-scroll" href="/" ng-click="toTheTop()" >DRY <span class="light">BLOG</span>
                 </a>
             </div>
 
@@ -35,17 +36,20 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#/#content">Interviews</a>
+                        <a class="page-scroll" href="/">Interviews</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="/about" ng-click="toTheTop()">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#authors">Authors</a>
+                        <a class="page-scroll" href="/authors" ng-click="toTheTop()">Authors</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#twitter">Twitter</a>
+                    <li ng-hide="true">
+                        <a class="page-scroll" href="/add" ng-click="toTheTop()">Add</a>
                     </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,10 +74,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.7.3/angular-scroll.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/routes.js"></script>
-    <script type="text/javascript" src="js/controllers.js"></script>
-    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/routes.js"></script>
+    <script type="text/javascript" src="./js/controllers.js"></script>
+    <script type="text/javascript" src="./js/services.js"></script>
     <script>window.twttr = (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, "script", "twitter-wjs"));</script>
   </body>
 </html>

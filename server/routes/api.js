@@ -14,9 +14,9 @@ router.get('/posts', function(req, res, next) {
     .done();
 });
 
-//get signgle blog interview
-router.get('/post/:id', function(req, res, next) {
-  Post.findByIdQ(req.params.id)
+//get single blog interview
+router.get('/post/:lastName', function(req, res, next) {
+  Post.findOneQ(req.params)
     .then(function(results){
       res.json(results);
     }).catch(function(results){

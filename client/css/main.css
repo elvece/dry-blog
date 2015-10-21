@@ -4,11 +4,10 @@ body {
     background-color: #fff;
 }
 
-.wrap {
+/*.wrap {
     max-width: 1000px;
     position: relative;
-
-}
+}*/
 
 h1, h2, h3, h4, h5, h6, .formatFont, .arrowSpace {
 /*    margin: 0 0 35px;*/
@@ -24,6 +23,12 @@ p {
     line-height: 1.5;
 }
 
+#logo {
+    max-width: 60%;
+    padding-left: 7%;
+    margin-top: 8%;
+}
+
 .home-blurb {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -31,20 +36,14 @@ p {
     font-size: 0.8em;
 }
 
-.y {
-    padding-left: 7%;
-}
-
-.home-title {
-    font-weight: 100;
-}
-
 .main-view {
     margin-top: -4.5em;
 }
 
-.dry {
-    font-size: 3em;
+.jumbo-border {
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 a, .highlight, .navbar-custom .nav li.active a:hover {

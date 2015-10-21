@@ -16,13 +16,11 @@ var Post = new Schema({
     website: String,
     twitter: String,
     linkedin: String,
-    instagram: String
+    instagram: String,
   }
 });
 
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/posts');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/posts');
 module.exports = mongoose.model('posts', Post);
 
-//for heroku in .env
-// mongodb://heroku_2f6rnbss:ndlmvji6tfpdre47nkan86oo9l@ds035674.mongolab.com:35674/heroku_2f6rnbss
