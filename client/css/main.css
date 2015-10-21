@@ -94,23 +94,6 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
     color: #964647;
 }
 
-/*FOOTER*/
-footer {
-    padding: 1em 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.8em;
-    color: gray;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
 .buffer {
     margin-top: 3.5em;
 }
@@ -123,4 +106,20 @@ footer p {
 .btn-circle:focus {
     outline: none;
     box-shadow: none;
+}
+
+/*FOOTER*/
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: gray;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
