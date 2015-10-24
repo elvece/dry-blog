@@ -55,7 +55,7 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 }
 
 /*NAVBAR*/
-.navbar-custom {
+.navbar-custom, footer {
     margin-bottom: 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -110,15 +110,21 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 
 /*FOOTER*/
 footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
+    /*clear: both;*/
+    /*position: relative;*/
+    /*height: 4em;*/
+    margin-top: 4em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 0.8em
+}
+
+#emailFooter {
+    padding-top: 2em;
 }
 
 footer p {
-    margin: 0;
-    font-size: 0.8em;
+    margin-top: -1em;
     color: gray;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;

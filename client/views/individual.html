@@ -24,7 +24,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>The Interview</h2>
-                Posted <span am-time-ago="time"></span>
+                Posted <span am-time-ago="time">{{ post._id }}</span>
+                <p>ObjectId().getTimestamp()</p>
                 <div class="summaryDiv row">
                     <div class="col-md-8 col-md-offset-2">
                         <p class="summaryText">
