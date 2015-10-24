@@ -1,0 +1,40 @@
+.topSpace {
+  padding-top: 2.8em;
+}
+
+.resourceList {
+  text-align: center;
+}
+
+.resourceSubtitle {
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.categoryTitle {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+.resourceBlock {
+  padding-bottom: 2em;
+}
+
+.redTitle {
+  color: #964647;
+}
+
+.underlineName {
+  text-decoration: underline;
+}
+.resourceLine {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.recommendedBy {
+  font-style: italic;
+  text-align: left;
+}
+
+
