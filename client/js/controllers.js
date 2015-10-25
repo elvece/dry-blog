@@ -93,7 +93,9 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 //POST PAGE CONTROLLER
 app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
   // $scope.thing = $routeParams._id;
-  // $scope.time = (new Date(parseInt($scope.thing.substring(0, 8), 16) * 1000));
+  $scope.time = function(mongoID) {
+    (new Date(parseInt(mongoID.substring(0, 8), 16) * 1000));
+  };
 
   $scope.last = $routeParams.lastName;
 
