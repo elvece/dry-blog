@@ -93,9 +93,21 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 //POST PAGE CONTROLLER
 app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
   // $scope.thing = $routeParams._id;
-  $scope.time = function(mongoID) {
-    (new Date(parseInt(mongoID.substring(0, 8), 16) * 1000));
+  $scope.timeStamp = function(id) {
+    var dateArray = [];
+    var dateBlock = new Date(parseInt(id.substring(0, 8), 16) * 1000);
+    var year = dateBlock.slice(0,4);
+    var month = dateBlock.slice(5,7);
+    var day = dateBlock.slice(8,10);
+    dateArray.push(year, month, day);
+    return moment(dateArray).fromNow();
   };
+
+  // $scope.getTime = function(id) {
+  //   var timestamp = ObjectId(id).getTimeStamp();
+  //   $scope.dateString = moment(date).calendar();
+  //   return $scope.dateString;
+  // };
 
   $scope.last = $routeParams.lastName;
 
