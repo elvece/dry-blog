@@ -22,6 +22,10 @@ app.config(function($routeProvider, $locationProvider){
       templateUrl: 'views/twitter.html',
       controller: 'mainController'
     })
+    .when('/resources', {
+      templateUrl: 'views/resources.html',
+      controller: 'mainController'
+    })
     .when('/post/:lastName/:firstName', {
       templateUrl: 'views/individual.html',
       controller: 'postController'
