@@ -7,9 +7,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+// *** config file *** //
+var config = require('../_config');
 
 // *** routes *** //
 var routes = require('./routes/api.js');
+var authRoutes = require('./routes/auth');
 
 // *** express instance *** //
 var app = express();
@@ -27,9 +32,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
+// *** mongoose ** //
+mongoose.connect(config.MONGOLAB_URI);
 
 // *** main routes *** //
 app.use('/api', routes);
+app.use('/auth', authRoutes);
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../client', 'layout.html'));
 });

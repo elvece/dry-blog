@@ -51,6 +51,15 @@
                         <li ng-hide="true">
                             <a class="page-scroll" href="/add" ng-click="toTheTop()">Add</a>
                         </li>
+                        <li ng-if="!isAuthenticated()">
+                            <a href="/login">Login</a>
+                        </li>
+                        <li ng-if="!isAuthenticated()">
+                            <a href="/signup">Signup</a>
+                        </li>
+                        <li ng-if="isAuthenticated()">
+                            <a ng-click="logout()" href="">Logout</a>
+                        </li>
                         <!--<li>
                             <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
                         </li>-->
@@ -76,6 +85,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/satellizer/0.12.5/satellizer.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.7.3/angular-scroll.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -83,6 +93,8 @@
     <script type="text/javascript" src="./js/routes.js"></script>
     <script type="text/javascript" src="./js/controllers.js"></script>
     <script type="text/javascript" src="./js/services.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/signup.js"></script>
     <script>window.twttr = (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, "script", "twitter-wjs"));</script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

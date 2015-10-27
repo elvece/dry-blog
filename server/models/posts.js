@@ -20,7 +20,5 @@ var Post = new Schema({
   }
 });
 
-
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/posts');
 module.exports = mongoose.model('posts', Post);
 
