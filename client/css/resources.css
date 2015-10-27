@@ -8,7 +8,7 @@
 
 .resourceSubtitle {
   margin-top: -1em;
-  padding-bottom: 1em;
+  margin-bottom: -0.8em;
 }
 
 .categoryTitle {
@@ -34,13 +34,14 @@
 
 .viewUl {
   display: inline-block;
+  padding-top: 1em;
 }
 
 .viewBtn {
   padding: 0.5em;
-  border: 1px solid gray;
-  width: 12em;
-  height: auto;
+/*  border: 1px solid gray;*/
+/*  width: 12em;
+  height: auto;*/
   display: inline-block;
   opacity: 0.8;
   color: gray;
@@ -49,11 +50,20 @@
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 0.8em;
-  margin-bottom: 1em;
+/*  margin-bottom: 1em;
   margin-left: -1em;
-  margin-right: -1em;
+  margin-right: -1em;*/
 }
 
 .viewBtn:hover {
   color: #964647;
+}
+
+.fadedLine {
+/*    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+    margin-top: -0.1em;
+    margin-bottom: -0.4em;
 }
