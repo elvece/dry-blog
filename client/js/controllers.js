@@ -102,7 +102,9 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 });
 
 //POST PAGE CONTROLLER
-app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
+app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter, $window, $rootScope, $anchorScroll){
+
+  $anchorScroll();
   // $scope.thing = $routeParams._id;
   $scope.timeStamp = function(id) {
     var dateArray = [];

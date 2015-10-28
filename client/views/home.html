@@ -31,7 +31,7 @@
       <div class="col-sm-10 col-sm-offset-1">
         <ul class="polaroids">
           <li ng-repeat="post in posts">
-            <a href="/post/{{post.lastName}}/{{post.firstName}}" class="text-center" ng-click="toTheTop()">
+            <a href="/post/{{post.lastName}}/{{post.firstName}}" class="text-center">
               <img ng-src="{{post.homeImage}}" alt="Image">
               <div class="polaroidTitle">{{post.firstName}}  {{post.lastName}}</div>
               <div class="polaroidSubtitle">{{post.position}}, {{post.company}}</div>
