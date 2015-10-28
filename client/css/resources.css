@@ -11,13 +11,13 @@
   margin-bottom: -0.8em;
 }
 
-.categoryTitle {
+.accordion-heading {
   border: 1px solid black;
-  padding: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .resourceBlock {
-  padding-bottom: 1em;
+  margin-bottom: -1em;
 }
 
 .redTitle {
@@ -43,9 +43,7 @@
 
 .viewBtn {
   padding: 0.5em;
-/*  border: 1px solid gray;*/
-/*  width: 12em;
-  height: auto;*/
+  text-decoration: underline;
   display: inline-block;
   opacity: 0.8;
   color: gray;
@@ -54,9 +52,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 0.8em;
-/*  margin-bottom: 1em;
-  margin-left: -1em;
-  margin-right: -1em;*/
+
 }
 
 .viewBtn:hover {

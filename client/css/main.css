@@ -141,17 +141,6 @@ footer p {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.page-wrap {
-  height: 100%;
-  margin-bottom: 7em;
-}
-.page-wrap:after {
-  display: block;
-}
-.footer, .page-wrap:after {
-  height: 100px;
-}
-
 /*HOME PAGE FADE IN TRANSITIONS*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
