@@ -58,7 +58,7 @@
                         <li ng-if="!isAuthenticated()" data-toggle="collapse" data-target=".navbar-main-collapse">
                             <a href="/signup">Signup</a>
                         </li>
-                        <li ng-if="isAuthenticated()">
+                        <li ng-if="isAuthenticated()" data-toggle="collapse" data-target=".navbar-main-collapse">
                             <a ng-click="logout()" href="">Logout</a>
                         </li>
                         <!--<li>
