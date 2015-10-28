@@ -11,9 +11,9 @@
   margin-bottom: -0.8em;
 }
 
-.accordion-heading {
+.collapseClick {
   border: 1px solid black;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
 .resourceBlock {
