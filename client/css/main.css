@@ -54,6 +54,14 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
     font-weight: 400;
 }
 
+ul {
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
 /*NAVBAR*/
 .navbar-custom {
     margin-bottom: 0;
@@ -191,9 +199,3 @@ animation-delay: 1s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
 }
-
-/*.fadeInSix {
--webkit-animation-delay: 4s;
--moz-animation-delay: 4s;
-animation-delay: 4s;
-}*/

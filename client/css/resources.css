@@ -17,7 +17,7 @@
 }
 
 .resourceBlock {
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 .redTitle {
@@ -27,6 +27,7 @@
 .underlineName {
   text-decoration: underline;
 }
+
 .resourceLine {
   font-size: 0.9em;
   text-align: left;
@@ -34,7 +35,10 @@
 
 .viewUl {
   display: inline-block;
-  padding-top: 1em;
+}
+
+.categoryAnchor {
+  padding-bottom: 2em;
 }
 
 .viewBtn {
@@ -59,11 +63,7 @@
   color: #964647;
 }
 
-.fadedLine {
-/*    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+/*.fadedLine {
     margin-top: -0.1em;
     margin-bottom: -0.4em;
-}
+}*/
