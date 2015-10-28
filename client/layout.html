@@ -25,7 +25,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="/" ng-click="toTheTop()" >DRY <span class="light">BLOG</span>
+                    <a class="navbar-brand page-scroll" href="/" >DRY <span class="light">BLOG</span>
                     </a>
                 </div>
 
@@ -33,9 +33,9 @@
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
+                        <!-- <li class="hidden">
                             <a href="#page-top"></a>
-                        </li>
+                        </li> -->
                         <li>
                             <a class="page-scroll" href="/">Interviews</a>
                         </li>
@@ -46,10 +46,10 @@
                             <a class="page-scroll" href="/authors">Authors</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/resources" ng-click="toTheTop()">Resources</a>
+                            <a class="page-scroll" href="/resources">Resources</a>
                         </li>
                         <li ng-if="isAuthenticated()">
-                            <a class="page-scroll" href="/add" ng-click="toTheTop()">Add</a>
+                            <a class="page-scroll" href="/add">Add</a>
                         </li>
                         <li ng-if="!isAuthenticated()">
                             <a href="/login">Login</a>
@@ -72,7 +72,6 @@
 
         <div ng-view autoscroll>
         </div>
-
 
         <!-- Footer -->
         <footer>
