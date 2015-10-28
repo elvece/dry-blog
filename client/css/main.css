@@ -81,7 +81,6 @@ ul {
 }
 
 .navbar-custom .nav li a:hover {
-    color: #964647;
     background-color: transparent;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
