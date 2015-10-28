@@ -1,5 +1,7 @@
 //MAIN CONTROLLER
-app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter, $document, $window, $auth, $rootScope){
+app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter, $document, $window, $auth, $rootScope, $anchorScroll){
+
+  $anchorScroll();
 
   $scope.newPost = {};
 
