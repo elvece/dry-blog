@@ -111,17 +111,16 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 /*FOOTER*/
 footer {
 /*    clear: both;*/
-    position: relative;
+/*    position: relative;*/
     margin-top: 4em;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    font-size: 0.8em;
     margin-bottom: 0;
+    font-size: 0.8em;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
 }
 
 #emailFooter {
@@ -135,6 +134,16 @@ footer p {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.page-wrap {
+  height: 100%;
+  margin-bottom: 7em;
+}
+.page-wrap:after {
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 100px;
+}
 
 /*HOME PAGE FADE IN TRANSITIONS*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -159,38 +168,32 @@ footer p {
     animation-iteration-count: 1;
 }
 
-.fadeInOne {
+.fadeInTwo {
 -webkit-animation-delay: 0.1s;
 -moz-animation-delay: 0.1s;
 animation-delay: 0.1s;
 }
 
-.fadeInTwo {
--webkit-animation-delay: 1.5s;
--moz-animation-delay: 1.5s;
-animation-delay: 1.5s;
-}
-
 .fadeInThree {
--webkit-animation-delay: 2.0s;
--moz-animation-delay: 2.0s;
-animation-delay: 2.0s;
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay: 0.6s;
+animation-delay: 0.6s;
 }
 
 .fadeInFour {
--webkit-animation-delay: 2.5s;
--moz-animation-delay: 2.5s;
-animation-delay: 2.5s;
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
 }
 
 .fadeInFive {
--webkit-animation-delay: 3.1s;
--moz-animation-delay: 3.1s;
-animation-delay: 3.1s;
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
 }
 
-.fadeInSix {
+/*.fadeInSix {
 -webkit-animation-delay: 4s;
 -moz-animation-delay: 4s;
 animation-delay: 4s;
-}
+}*/
