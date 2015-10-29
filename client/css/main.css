@@ -29,6 +29,19 @@ p {
     margin-top: 8%;
 }
 
+    /*@media(min-width: 768px) {
+        #logo {
+            margin-top: 10%;
+        }
+    }
+
+    @media(min-width: 354px) {
+        #logo {
+            margin-top: 15%;
+        }
+    }*/
+
+
 .home-blurb {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
