@@ -27,7 +27,7 @@
                         <li>
                             <a class="page-scroll" href="/authors" ng-click="toTheTop()">Authors</a>
                         </li>
-                        <li ng-hide="true">
+                        <li ng-if="isAuthenticated()">
                             <a class="page-scroll" href="/add" ng-click="toTheTop()">Add</a>
                         </li>
                         <li ng-if="!isAuthenticated()">
@@ -37,7 +37,7 @@
                             <a href="/signup">Signup</a>
                         </li>
                         <li ng-if="isAuthenticated()">
-                            <a ng-click="logout()" href="">Logout</a>
+                            <a ng-click="logout()" href="go('/')">Logout</a>
                         </li>
                         <!--<li>
                             <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
