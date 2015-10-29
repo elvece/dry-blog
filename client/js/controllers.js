@@ -40,8 +40,8 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     $scope.newPost.content = $scope.tempContent;
     $scope.question = "";
     $scope.answer = "";
-    console.log(newContent);
-    console.log($scope.tempContent);
+    // console.log(newContent);
+    // console.log($scope.tempContent);
   };
 
   $scope.deleteQuestion = function() {
@@ -62,7 +62,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     $scope.newPost.content = $scope.tempImages;
     $scope.question = "";
     $scope.answer = "";
-    console.log($scope.newPost);
+    // console.log($scope.newPost);
   };
 
   //get all posts
@@ -95,7 +95,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   $scope.addQuestion = function(id){
     myFactory.put('/api/post/content/' + id)
       .then(function(res){
-        console.log(res);
+        // console.log(res);
       });
   };
 
