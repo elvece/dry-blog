@@ -3,7 +3,7 @@
 }
 
 .resourceMain {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
 }
 
 .resourceList {
@@ -25,6 +25,7 @@
 }
 
 .redTitle {
+  padding-top: 1.5em;
   color: #964647;
 }
 
@@ -71,4 +72,8 @@
 
 i {
   padding-left: 3px;
+}
+
+.scrollBox {
+  margin-bottom: 6em;
 }
