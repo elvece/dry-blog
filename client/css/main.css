@@ -29,18 +29,29 @@ p {
     margin-top: 8%;
 }
 
-    /*@media(min-width: 768px) {
+    @media (min-device-width: 320px) {
+        #logo {
+            margin-top: 18%;
+        }
+    }
+
+    @media (min-device-width: 375px) {
+        #logo {
+            margin-top: 30%;
+        }
+    }
+
+    @media (min-device-width: 768px) {
+        #logo {
+            margin-top: 20%;
+        }
+    }
+
+    @media (min-device-width: 1200px) {
         #logo {
             margin-top: 10%;
         }
     }
-
-    @media(min-width: 354px) {
-        #logo {
-            margin-top: 15%;
-        }
-    }*/
-
 
 .home-blurb {
     text-transform: uppercase;
