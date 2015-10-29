@@ -31,10 +31,7 @@
                             <a class="page-scroll" href="/add">Add</a>
                         </li>
                         <li ng-if="!isAuthenticated()">
-                            <a href="/login">Login</a>
-                        </li>
-                        <li ng-if="!isAuthenticated()">
-                            <a href="/signup">Signup</a>
+                            <a href="/login">Admin</a>
                         </li>
                         <li ng-if="isAuthenticated()">
                             <a ng-click="logout()" href="go('/')">Logout</a>
