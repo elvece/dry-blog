@@ -102,7 +102,6 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 });
 
 //POST PAGE CONTROLLER
-<<<<<<< HEAD
 app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter, $window, $rootScope, $anchorScroll){
 
   $anchorScroll();
@@ -122,9 +121,6 @@ app.controller('postController', function($scope, myFactory, $http, $location, $
   //   $scope.dateString = moment(date).calendar();
   //   return $scope.dateString;
   // };
-=======
-app.controller('postController', function($scope, myFactory, $http, $location, $routeParams, $filter){
->>>>>>> ZoeAde-master
 
   $scope.last = $routeParams.lastName;
 
