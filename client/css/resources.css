@@ -2,6 +2,10 @@
   padding-top: 2.8em;
 }
 
+.resourceMain {
+  margin-bottom: 0.2em;
+}
+
 .resourceList {
   text-align: center;
 }
@@ -17,7 +21,7 @@
 }
 
 .resourceBlock {
-  margin-bottom: -1em;
+  margin-bottom: 0;
 }
 
 .redTitle {
@@ -31,6 +35,7 @@
 .resourceLine {
   font-size: 0.9em;
   text-align: left;
+  padding-bottom: 2em;
 }
 
 .viewUl {
@@ -38,7 +43,7 @@
 }
 
 .categoryAnchor {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .viewBtn {
@@ -63,3 +68,7 @@
     margin-top: -0.1em;
     margin-bottom: -0.4em;
 }*/
+
+i {
+  padding-left: 3px;
+}

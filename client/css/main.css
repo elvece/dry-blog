@@ -187,3 +187,7 @@ animation-delay: 1s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
 }
+
+.inline {
+    display: inline-block;
+}
