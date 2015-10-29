@@ -9,13 +9,13 @@ app.controller('loginController', function($scope, $auth, $rootScope, $window, $
 
     $auth.login(user)
       .then(function(response) {
-        console.log(response);
+        // console.log(response);
         $window.localStorage.currentUser = JSON.stringify(response.data.user);
         $rootScope.currentUser = JSON.parse($window.localStorage.currentUser);
         $location.path('/home');
       })
       .catch(function(response) {
-        console.log(response);
+        // console.log(response);
       });
   };
 
