@@ -2,10 +2,6 @@
   padding-top: 100px;
 }
 
-ul {
-  list-style: none;
-}
-
 ul.polaroids img {
   display: block;
   width: 280px;

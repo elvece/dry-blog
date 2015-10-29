@@ -1,6 +1,6 @@
 body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    color: #262626;
     background-color: #fff;
 }
 
@@ -78,6 +78,14 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
     font-weight: 400;
 }
 
+ul {
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
 /*NAVBAR*/
 .navbar-custom {
     margin-bottom: 0;
@@ -97,7 +105,6 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 }
 
 .navbar-custom .nav li a:hover {
-    color: #964647;
     background-color: transparent;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -135,17 +142,16 @@ a, .highlight, .navbar-custom .nav li.active a:hover {
 /*FOOTER*/
 footer {
 /*    clear: both;*/
-    position: relative;
+/*    position: relative;*/
     margin-top: 4em;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    font-size: 0.8em;
     margin-bottom: 0;
+    font-size: 0.8em;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
 }
 
 #emailFooter {
@@ -157,4 +163,55 @@ footer p {
     color: gray;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*HOME PAGE FADE IN TRANSITIONS*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+.fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+
+    animation-iteration-count: 1;
+}
+
+.fadeInTwo {
+-webkit-animation-delay: 0.1s;
+-moz-animation-delay: 0.1s;
+animation-delay: 0.1s;
+}
+
+.fadeInThree {
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay: 0.6s;
+animation-delay: 0.6s;
+}
+
+.fadeInFour {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.fadeInFive {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+.inline {
+    display: inline-block;
 }
