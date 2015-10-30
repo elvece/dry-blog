@@ -64,7 +64,7 @@ p {
     padding-top: 100px;
 }
 
-@media(min-device-width:1400px){
+@media(min-device-width:1800px){
     .contact-blurb {
         padding-top: 200px;/*need to test*/
     }
