@@ -17,14 +17,15 @@
 .intro .intro-body .brand-heading {
     padding-top: 0.3em;
     font-size: 3em;
-    margin-top: 12em;
+    margin-top: 13em;
 }
 
-@media (min-width:1200px){
+@media (min-width:1400px){
     .intro .intro-body .brand-heading {
-        margin-top: 18.5em;
+        margin-top: 19.5em;
     }
 }
+
 
 .intro .intro-body .intro-text {
     font-size: 1.6em;
@@ -131,7 +132,7 @@
     width: 100%;
 }
 
-@media (min-width:1200px){
+@media (min-width:1400px){
     .interview {
         padding-top: 75em;
     }
