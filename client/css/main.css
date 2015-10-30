@@ -60,7 +60,23 @@ p {
     font-size: 0.85em;
 }
 
-.content-blurb {
+.contact-blurb {
+    padding-top: 100px;
+}
+
+@media(min-device-width:1400px){
+    .contact-blurb {
+        padding-top: 200px;/*need to test*/
+    }
+}
+
+@media(min-device-width:920px){
+    .contact-blurb {
+        padding-top: 150px;/*need to test*/
+    }
+}
+
+.feature-blurb {
     padding-top: 0;
 }
 
