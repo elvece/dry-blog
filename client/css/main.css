@@ -98,6 +98,7 @@ ul {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff;
+    position: absolute;
 }
 
 .navbar-custom .navbar-brand {

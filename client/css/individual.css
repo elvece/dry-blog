@@ -20,13 +20,15 @@
     margin-top: 13.45em;
 }
 
+@media (min-width:1200px){
+    .intro .intro-body .brand-heading {
+        margin-top: 18.5em;
+    }
+}
+
 .intro .intro-body .intro-text {
     font-size: 1.6em;
     margin-top: -1.6em;
-}
-
-#interview-stuff {
-    padding-top: 5em;
 }
 
 .block {
@@ -127,6 +129,12 @@
     padding-top: 53em;
     padding-bottom: 3em;
     width: 100%;
+}
+
+@media (min-width:1200px){
+    .interview {
+        padding-top: 75em;
+    }
 }
 
 .interviewer {
