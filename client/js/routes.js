@@ -18,8 +18,8 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
       templateUrl: 'views/about.html',
       controller: 'mainController',
     })
-    .when('/authors', {
-      templateUrl: 'views/authors.html',
+    .when('/creators', {
+      templateUrl: 'views/creators.html',
       controller: 'mainController',
     })
     .when('/add', {
