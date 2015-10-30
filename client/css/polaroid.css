@@ -26,9 +26,9 @@ ul.polaroids a {
   color: #333;
   font-size: 18px;
 
-  -webkit-transform: rotate(-2deg);
+/*  -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  transform: rotate(-2deg);*/
 }
 
 /* Rotate all even images 2 degrees */
