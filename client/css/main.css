@@ -74,8 +74,12 @@ p {
     padding-right: 3em;
 }
 
-a, .highlight, .navbar-custom .nav li.active a:hover {
+a, .highlight, .navbar-custom .nav li.active  {
     color: #964647;
+}
+
+a:hover {
+    color: #CA8E8F;
 }
 
 .light {
@@ -125,7 +129,7 @@ ul {
     background-color: rgba(255,255,255,.3);
 }
 
-.navbar-custom .nav li.active a:hover {
+.navbar-custom .nav li.active {
     color: #964647;
 }
 
