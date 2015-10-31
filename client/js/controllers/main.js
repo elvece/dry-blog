@@ -31,6 +31,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
       });
   };
 
+// ADD.JS CONTROLLER
   $scope.tempContent = [];
   $scope.tempImages = [];
 
