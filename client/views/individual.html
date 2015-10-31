@@ -1,11 +1,11 @@
 
  <!-- PROFILE IMAGE SECTION -->
-    <header class="intro imgFormat" ng-style="{'background': post.img, 'background-repeat': 'no-repeat', 'background-size': 'cover', 'background-attachment': 'scroll', 'background-position': 'center', 'display': 'block', 'position': 'absolute','width': '100%', 'height': '100%'}">
+    <header class="intro center imgFormat" ng-style="{'background': post.img, 'background-repeat': 'no-repeat', 'background-size': 'cover', 'background-attachment': 'scroll', 'background-position': 'center', 'display': 'block', 'position': 'absolute','width': '100%', 'height': '100%'}">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 top-content">
-                        <div class="block">
+                        <div class="whiteBack block">
                             <h1 class="brand-heading">{{ post.firstName }} {{ post.lastName}}</h1>
                             <p class="intro-text">{{ post.position }}, {{ post.company }}</p>
                         </div>
@@ -27,9 +27,9 @@
                 <h2>The Interview</h2>
                 <!-- <span am-time-ago="time(post._id)"></span> -->
                 <!-- <div> {{ timeStamp(post._id) }} </div> -->
-                <div class="summaryDiv row">
+                <div class="center italic row">
                     <div class="col-md-8 col-md-offset-2">
-                        <p class="summaryText">
+                        <p class="left">
                            {{ post.summary }}
                         </p>
                     </div>
@@ -37,8 +37,8 @@
                 <br>
                 <br>
                 <div ng-repeat="content in post.content">
-                    <div class="interviewer">{{ content.question }}</div>
-                    <div class="interviewee"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
+                    <div class="interviewer fontMontserrat uppercase left">{{ content.question }}</div>
+                    <div class="interviewee left"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
                 </div>
                 <p><strong>We ask each interviewee to share an awesome resource they recommened. It could be anything that inspiries them or that they have benefited from. Check out {{post.firstName}}'s resource <a href="/resources">here!</a></strong></p>
             </div>
@@ -53,19 +53,19 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <ul class="list-inline banner-social-buttons">
                     <li ng-show="post.social.twitter.length > 0">
-                        <a href="{{ post.social.twitter }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="{{ post.social.twitter }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                     <li ng-show="post.social.github.length > 0">
-                        <a href="{{ post.social.github }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="{{ post.social.github }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                     <li ng-show="post.social.instagram.length > 0">
-                        <a href="{{ post.social.instagram }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="{{ post.social.instagram }}" target="_blank" class="btn btn-default btn-lg interviewBtn blackColor transparent weightFour fontMontserrat"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                     <li ng-show="post.social.linkedin.length > 0">
-                        <a href="{{ post.social.linkedin }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="{{ post.social.linkedin }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                     <li ng-show="post.social.website.length > 0">
-                        <a href="{{ post.social.website }}" target="_blank" class="btn btn-default btn-lg interviewBtn"><i class="fa fa-globe fa-fw"></i> <span class="network-name"></span></a>
+                        <a href="{{ post.social.website }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-globe fa-fw"></i> <span class="network-name"></span></a>
                     </li>
                 </ul>
             </div>

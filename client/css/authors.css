@@ -1,23 +1,5 @@
-/*SOCIAL BUTTONS*/
-.aboutBtn {
-    color: #000;
-    border: none;
-    background-color: transparent;
-    font-size: 1.6em;
-    margin: -0.55em;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.aboutBtn:hover,
-.aboutBtn:focus {
-    color: #964647;
-    background-color: #fff;
-}
-
 /*PROFILE ALIGNMENT*/
-.left {
+.aboutCreators {
     text-align: justify;
     font-size: 1.1em;
     padding: 2em;
@@ -38,9 +20,19 @@
     margin-bottom: 1.5em;
 }
 
-.name {
-    font-size: 3em;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
+/*SOCIAL BUTTONS*/
+.aboutBtn {
+    border: none;
+    font-size: 1.6em;
+    margin: -0.55em;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
+
+.aboutBtn:hover,
+.aboutBtn:focus {
+    color: #964647;
+    background-color: #fff;
+}
+

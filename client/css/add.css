@@ -1,12 +1,5 @@
-/*.form-group {
-  text-align: left;
-  display: inline;
-}*/
-
 .addBtn {
-    color: #000;
     border: none;
-    background-color: transparent;
     font-size: 1.6em;
     margin: -0.55em;
     -webkit-transition: all .3s ease-in-out;
@@ -20,7 +13,7 @@
     background-color: #fff;
 }
 
-.title {
+.addTitle {
   margin-top: -5em;
 }
 
@@ -31,8 +24,6 @@
 
 .completed {
   text-align: left;
-  font-size: 1em;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .space {
@@ -43,14 +34,6 @@
 .arrowSpace {
   padding: 1.2em;
   margin-bottom: 1em;
-}
-
-#addBtn {
-  background: transparent;
-  border-radius: 100%;
-  border-width: 3px;
-  border-color: black;
-  margin-bottom: 2em;
 }
 
 .inputTitle {

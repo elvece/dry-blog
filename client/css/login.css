@@ -9,10 +9,5 @@
 .loginBtn {
   margin-top: 0.8em;
   font-size: 1em;
-  background-color: transparent;
-  color: #964647;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
   letter-spacing: 3px;
 }
