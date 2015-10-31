@@ -19,7 +19,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
       controller: 'mainController',
     })
     .when('/creators', {
-      templateUrl: 'viewscreators.html',
+      templateUrl: 'views/creators.html',
       controller: 'mainController',
     })
     .when('/add', {
