@@ -132,7 +132,7 @@
     width: 100%;
 }
 
-@media (min-width:1400px){
+@media (min-width:1600px){
     .interview {
         padding-top: 75em;
     }
