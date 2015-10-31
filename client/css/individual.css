@@ -144,9 +144,11 @@
 }
 
 .interviewer {
-    font-style: italic;
     padding-bottom: 1em;
     text-align: left;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.85em;
 }
 
 .interviewee {

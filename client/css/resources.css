@@ -18,6 +18,7 @@
 .collapseClick {
   border: 1px solid black;
   padding-bottom: 1em;
+  cursor: pointer;
 }
 
 .resourceBlock {
@@ -29,13 +30,23 @@
   color: #964647;
 }
 
-.underlineName {
-  text-decoration: underline;
+.titleLink:hover, .personalLink:hover {
+  color: #CA8E8F;
+  text-decoration: none;
+}
+
+.titleLink:active, .personalLink:active {
+  color:#964647;
+  text-decoration: none;
 }
 
 .resourceLine {
   font-size: 0.9em;
   text-align: left;
+  padding-bottom: 0.7em;
+}
+
+.personalLink {
   padding-bottom: 2em;
 }
 
@@ -77,3 +88,4 @@ i {
 .scrollBox {
   margin-bottom: 6em;
 }
+
