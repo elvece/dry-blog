@@ -26,6 +26,11 @@
     }
 }
 
+@media (min-width:1400px){
+    .intro .intro-body .brand-heading {
+        margin-top: 15em;
+    }
+}
 
 .intro .intro-body .intro-text {
     font-size: 1.6em;
