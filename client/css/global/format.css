@@ -13,12 +13,6 @@ ul {
     margin-top: 3.5em;
 }
 
-/*@media (min-device-width: 785px) {
-    .buffer {
-        margin-top: 8.5em;
-    }
-}*/
-
 .btn-circle:focus {
     outline: none;
     box-shadow: none;
