@@ -1,8 +1,8 @@
 /*INTERVIEW LANDING PAGE*/
 .intro {
     display: table;
-    width: 100%;
-    height: auto;
+/*    width: 100%;
+    height: auto;*/
     padding: 100px 0;
     color: #000;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 }
 
 /*INTERVIEW*/
-.interview {
+/*.interview {
     padding-top: 53em;
     padding-bottom: 3em;
     width: 100%;
@@ -76,7 +76,7 @@
     .interview {
         padding-top: 75em;
     }
-}
+}*/
 
 .interviewer {
     padding-bottom: 1em;
