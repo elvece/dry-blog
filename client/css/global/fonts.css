@@ -1,0 +1,40 @@
+/*DEFAULT FONTS*/
+body {
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+/*FONT TRANSFORMATIONS*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.weightFour {
+  font-weight: 400;
+}
+
+.weightSeven {
+  font-weight: 700;
+}
+
+/* FONT FAMILIES */
+.fontMontserrat {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+
+/*FONT SIZING*/
+.home-blurb {
+    font-size: 0.85em;
+}
+

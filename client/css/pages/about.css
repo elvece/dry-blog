@@ -1,0 +1,21 @@
+.aboutContainer {
+  padding-bottom: 2em;
+}
+
+.why {
+  font-size: 6em;
+  margin-bottom: 0;
+}
+
+.whyP {
+  margin-top: -1.2em;
+}
+
+.p-pad-fix {
+  padding: 10px;
+}
+
+.norm {
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}

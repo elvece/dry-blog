@@ -1,0 +1,38 @@
+/*PROFILE ALIGNMENT*/
+.aboutCreators {
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 2em;
+}
+
+.border {
+    margin-top: -4em;
+    padding: 6em;
+}
+
+.social {
+    padding-top: 1em;
+    margin-bottom: -2em;
+}
+
+.aboutImages {
+    border-radius: 100px;
+    margin-bottom: 1.5em;
+}
+
+/*SOCIAL BUTTONS*/
+.aboutBtn {
+    border: none;
+    font-size: 1.6em;
+    margin: -0.55em;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.aboutBtn:hover,
+.aboutBtn:focus {
+    color: #964647;
+    background-color: #fff;
+}
+

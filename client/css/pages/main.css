@@ -1,0 +1,50 @@
+.main-view {
+    margin-top: -4.5em;
+}
+
+.jumbo-border {
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*EMAIL US SECTION*/
+.feature-blurb {
+    padding-top: 0;
+}
+
+/*ARROW ALIGNMENT*/
+.homeArrow {
+    margin-top: 0;
+}
+
+/*LOGO SIZE*/
+#logo {
+    max-width: 60%;
+    padding-left: 7%;
+    margin-top: 8%;
+}
+
+@media (min-device-width: 320px) {
+    #logo {
+        margin-top: 18%;
+    }
+}
+
+@media (min-device-width: 375px) {
+    #logo {
+        margin-top: 30%;
+    }
+}
+
+@media (min-device-width: 768px) {
+    #logo {
+        margin-top: 20%;
+    }
+}
+
+@media (min-device-width: 1200px) {
+    #logo {
+        margin-top: 10%;
+    }
+}
