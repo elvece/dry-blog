@@ -3,9 +3,8 @@
 }
 
 .jumbo-border {
-    padding-top: 3em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-top: 4em;
+    padding-bottom: 5em;
 }
 
 /*EMAIL US SECTION*/
@@ -20,9 +19,8 @@
 
 /*LOGO SIZE*/
 #logo {
-    max-width: 60%;
     padding-left: 7%;
-    margin-top: 8%;
+    height: 45vh;
 }
 
 @media (min-device-width: 320px) {

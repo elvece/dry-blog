@@ -1,8 +1,6 @@
 /*INTERVIEW LANDING PAGE*/
 .intro {
     display: table;
-/*    width: 100%;
-    height: auto;*/
     padding: 100px 0;
     color: #000;
     background-repeat: no-repeat;
@@ -102,4 +100,8 @@
     outline: 0;
     color: #964647;
     background-color: #fff;
+}
+
+.summaryBlock {
+    font-size: 0.8em;
 }
