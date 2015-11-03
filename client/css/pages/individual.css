@@ -78,7 +78,7 @@
 
 .interviewer {
     padding-bottom: 1em;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 .interviewee {
@@ -104,4 +104,8 @@
 
 .summaryBlock {
     font-size: 0.8em;
+}
+
+.socialBlock {
+    margin-top: 1.5em;
 }
