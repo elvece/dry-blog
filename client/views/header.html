@@ -16,13 +16,13 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/about">About</a>
-                        </li>
-                        <li>
                             <a class="page-scroll" href="/#/#content">Interviews</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="/resources">Resources</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/about">About</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="/creators">Creators</a>
@@ -30,9 +30,9 @@
                         <li ng-if="isAuthenticated()">
                             <a class="page-scroll" href="/add">Add</a>
                         </li>
-                        <li ng-if="!isAuthenticated()">
+<!--                         <li ng-if="!isAuthenticated()">
                             <a href="/login">Admin</a>
-                        </li>
+                        </li> -->
                         <li ng-if="isAuthenticated()">
                             <a ng-click="logout()" href="go('/')">Logout</a>
                         </li>

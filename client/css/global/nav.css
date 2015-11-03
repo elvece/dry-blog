@@ -12,7 +12,7 @@
 }
 
 .navbar-custom .nav li a:hover {
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }

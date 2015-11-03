@@ -28,8 +28,8 @@
                 <h2>The Interview</h2>
                 <!-- <span am-time-ago="time(post._id)"></span> -->
                 <!-- <div> {{ timeStamp(post._id) }} </div> -->
-                <div class="center italic row">
-                    <div class="col-md-8 col-md-offset-2">
+                <div class="center row">
+                    <div class="col-md-8 col-md-offset-2 fontMontserrat summaryBlock">
                         <p class="left">
                            {{ post.summary }}
                         </p>
@@ -38,10 +38,14 @@
                 <br>
                 <br>
                 <div ng-repeat="content in post.content">
-                    <div class="interviewer fontMontserrat uppercase left">{{ content.question }}</div>
+                    <div class="interviewer left italic">{{ content.question }}</div>
                     <div class="interviewee left"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
                 </div>
-                <p><strong>We ask each interviewee to share an awesome resource they recommened. It could be anything that inspiries them or that they have benefited from. Check out {{post.firstName}}'s resource <a href="/resources">here!</a></strong></p>
+                <div class="center row">
+                    <div class="col-md-8 col-md-offset-2 left fontMontserrat summaryBlock">
+                        <p>We ask each interviewee to share a resource with our community. It can be anything that inspiries them, facilitates self-development, or something relaxing after a long day's work. Check out {{post.firstName}}'s resource <a href="/resources">here!</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -70,6 +74,11 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="center">
+            <a href="" ng-click="toTheTop()" class="btn btn-circle page-scroll homeArrow" du-smooth-scroll>
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>
         </div>
     </section>
 </div>
