@@ -38,7 +38,7 @@ mongoose.connect(config.MONGOLAB_URI);
 // *** main routes *** //
 app.use('/api', routes);
 app.use('/auth', authRoutes);
-app.get('/', function(req, res){
+app.all('/*', function(req, res){
   res.sendFile(path.join(__dirname, '../client', 'layout.html'));
 });
 
