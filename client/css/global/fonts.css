@@ -2,7 +2,6 @@
 body {
   font-family:'Open Sans', sans-serif;
   letter-spacing: 0.3px;
-  font-size: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,5 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 /*FONT SIZING*/
 .home-blurb {
     font-size: 0.85em;
+}
+
+.interview-font {
+    font-size: 1.1em;
 }
 

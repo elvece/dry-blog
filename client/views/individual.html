@@ -28,7 +28,7 @@
                 <h2>The Interview</h2>
                 <!-- <span am-time-ago="time(post._id)"></span> -->
                 <!-- <div> {{ timeStamp(post._id) }} </div> -->
-                <div class="center row">
+                <div class="center row interview-font">
                     <div class="col-md-10 col-md-offset-1 summaryBlock">
                         <p class="left italic">
                            {{ post.summary }}
@@ -38,7 +38,7 @@
                 <br>
                 <hr>
                 <br>
-                <div ng-repeat="content in post.content">
+                <div class="interview-font" ng-repeat="content in post.content">
                     <div class="interviewer left italic">{{ content.question }}</div>
                     <div class="interviewee left"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
                 </div>
