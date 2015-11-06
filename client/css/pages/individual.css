@@ -9,7 +9,9 @@
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
+    border-bottom: 1px solid black;
 }
+
 
 .intro .intro-body .brand-heading {
     padding-top: 0.3em;

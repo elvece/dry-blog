@@ -1,13 +1,19 @@
 /*DEFAULT FONTS*/
 body {
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family:'Open Sans', sans-serif;
+  letter-spacing: 0.3px;
+  font-size: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Montserrat,"Helvetica Neue", Helvetica,Arial,sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
+}
+
+.font-lora {
+  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /*FONT TRANSFORMATIONS*/
