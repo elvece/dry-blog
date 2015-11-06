@@ -32,7 +32,7 @@
         </div>
         <div class="center">
           <ul class="polaroids">
-            <li ng-repeat="post in posts | orderBy: '-_id.$oid'">
+            <li ng-repeat="post in posts | toArray | orderBy: '-_id'">
               <a href="/post/{{post.lastName}}/{{post.firstName}}" class="text-center">
                 <img ng-src="{{post.homeImage}}" alt="Image">
                 <div class="polaroidTitle">{{post.firstName}}  {{post.lastName}}</div>
