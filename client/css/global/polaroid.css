@@ -106,9 +106,9 @@ ul.polaroids a {
           box-shadow: 3px 3px 3px #777;
 }*/
 
-/*ul.polaroids li {display:inline;}*/
+ul.polaroids li {display:inline;}
 
-.polaroidSubtitle {
+/*.polaroidSubtitle {
   font-size: 0.6em;
   margin-left: -0.5;
-}
+}*/
