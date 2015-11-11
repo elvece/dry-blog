@@ -10,31 +10,31 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse weightFour">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" data-toggle="collapse">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/#/#content">Interviews</a>
+                            <a  data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/#/#content">Interviews</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/resources">Resources</a>
+                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll coll" href="/resources">Resources</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/about">About</a>
+                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/about">About</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/creators">Creators</a>
+                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/creators">Creators</a>
                         </li>
                         <li ng-if="isAuthenticated()">
-                            <a class="page-scroll" href="/add">Add</a>
+                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/add">Add</a>
                         </li>
 <!--                         <li ng-if="!isAuthenticated()">
                             <a href="/login">Admin</a>
                         </li> -->
                         <li ng-if="isAuthenticated()">
-                            <a ng-click="logout()" href="go('/')">Logout</a>
+                            <a data-toggle="collapse" data-target=".navbar-main-collapse" ng-click="logout()" href="go('/')">Logout</a>
                         </li>
                         <!--<li>
                             <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
