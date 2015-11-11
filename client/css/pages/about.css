@@ -3,8 +3,8 @@
 }
 
 .why {
-  font-size: 6em;
-  margin-bottom: 0;
+  font-size: 4em;
+  margin-top: 10%;
 }
 
 .whyP {
@@ -13,6 +13,7 @@
 
 .p-pad-fix {
   padding: 10px;
+  text-align: justify;
 }
 
 .norm {

@@ -15,26 +15,26 @@
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li>
-                            <a  data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/#/#content">Interviews</a>
+                        <li class="dropdown">
+                            <a nav-hide-directive class="page-scroll" href="/#/#content">Interviews</a>
                         </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll coll" href="/resources">Resources</a>
+                        <li class="dropdown">
+                            <a nav-hide-directive class="page-scroll" href="/resources">Resources</a>
                         </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/about">About</a>
+                        <li class="dropdown">
+                            <a nav-hide-directive class="page-scroll" href="/about">About</a>
                         </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/creators">Creators</a>
+                        <li class="dropdown">
+                            <a nav-hide-directive class="page-scroll" href="/creators">Creators</a>
                         </li>
-                        <li ng-if="isAuthenticated()">
-                            <a data-toggle="collapse" data-target=".navbar-main-collapse" class="page-scroll" href="/add">Add</a>
+                        <li class="dropdown" ng-if="isAuthenticated()">
+                            <a nav-hide-directive class="page-scroll" href="/add">Add</a>
                         </li>
-<!--                         <li ng-if="!isAuthenticated()">
+<!--                         <li class="dropdown" ng-if="!isAuthenticated()">
                             <a href="/login">Admin</a>
                         </li> -->
-                        <li ng-if="isAuthenticated()">
-                            <a data-toggle="collapse" data-target=".navbar-main-collapse" ng-click="logout()" href="go('/')">Logout</a>
+                        <li class="dropdown" ng-if="isAuthenticated()">
+                            <a ng-click="logout()" href="go('/')">Logout</a>
                         </li>
                         <!--<li>
                             <a class="page-scroll" href="#twitter" ng-click="toTheTop()">Twitter</a>
