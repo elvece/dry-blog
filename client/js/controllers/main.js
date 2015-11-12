@@ -1,4 +1,12 @@
 //MAIN CONTROLLER
+
+//COLLAPSE FIX ON SMALL SCREEN SIZE
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter, $document, $window, $auth, $rootScope, $anchorScroll){
 
   $anchorScroll();
