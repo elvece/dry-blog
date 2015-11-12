@@ -1,112 +1,34 @@
-ul.polaroids img {
-  display: block;
-  width: 280px;
-  margin-bottom: 12px;
+
+/* POLARIOD FORMATTING */
+
+
+.authorTitle {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
 }
 
-ul.polaroids a:after {
-  content: attr(title);
+.authorSubtitle {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
 }
 
-/* By default, we tilt all our images -2 degrees */
-ul.polaroids a {
-  background: #fff;
-  display: inline;
-  float: left;
-  margin: 0 0 27px 30px;
-  width: auto;
-  padding: 10px 10px 15px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
-
-/*  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  transform: rotate(-2deg);*/
+.polaroid {
+    padding: 10px 10px 20px 10px;
+    box-shadow: 4px 4px 9px rgba(0,0,0,.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Rotate all even images 2 degrees */
-ul.polaroids li:nth-child(even) a {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  transform: rotate(-2deg);
+.polaroid:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.25);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .15s linear;
+    transition: transform .15s linear;
 }
 
-/* Don't rotate every third image, but offset its position */
-ul.polaroids li:nth-child(3n) a {
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-  position: relative;
-  top: -5px;
-}
 
-/* Rotate every fifth image by 5 degrees and offset it */
-ul.polaroids li:nth-child(5n) a {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  transform: rotate(2deg);
-  position: relative;
-  right: 5px;
-}
 
-/* Keep default rotate for every eighth, but offset it */
-ul.polaroids li:nth-child(8n) a {
-  position: relative;
-  top: 8px;
-  right: 5px;
-}
-
-/* Keep default rotate for every eleventh, but offset it */
-ul.polaroids li:nth-child(11n) a {
-  position: relative;
-  top: 3px;
-  left: -5px;
-}
-
-/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids li a:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  transform: scale(1.25);
-  position: relative;
-  z-index: 5;
-}
-
-/* Add drop shadows and smooth out the transition (Safari only) */
-ul.polaroids a {
-  -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}
-
-/* On hover, darken the shadows a bit */
-ul.polaroids a {
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  box-shadow: 4px 4px 9px rgba(0,0,0,.8);
-}
-
-/*.polaroid {
-  position: relative;
-  width: 220px;
-}
-.polaroid img {
-  border: 10px solid #fff;
-  border-bottom: 45px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;
-}*/
-
-/*ul.polaroids li {display:inline;}*/
-
-.polaroidSubtitle {
-  font-size: 0.6em;
-  margin-left: -0.5;
-}
