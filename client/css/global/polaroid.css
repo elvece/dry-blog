@@ -6,13 +6,11 @@
     margin-top: 15px;
     font-size: 1.1em;
     color: black;
-    text-decoration: none;
 }
 
 .authorSubtitle {
     font-size: 0.8em;
     color: black;
-    text-decoration: none;
 }
 
 .polaroid {
@@ -28,7 +26,10 @@
     transform: scale(1.1);
     -webkit-transition: -webkit-transform .15s linear;
     transition: transform .15s linear;
+    text-decoration: none;
 }
 
-
+.polaroid a:hover {
+  text-decoration: none;
+}
 
