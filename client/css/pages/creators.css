@@ -39,8 +39,7 @@
 
 /* POLARIOD FORMATTING */
 .polBox {
-    margin-bottom: 10em;
-    margin-top: 2em;
+    margin: 2em 2em 2em 2em;
     -webkit-box-shadow: 4px 4px 9px rgba(0,0,0,.25);
     -moz-box-shadow: 4px 4px 9px rgba(0,0,0,.25);
     box-shadow: 4px 4px 9px rgba(0,0,0,.8);
@@ -77,6 +76,7 @@
     -moz-transform: scale(1.25);
     transform: scale(1.25);
     -webkit-transition: -webkit-transform .15s linear;
+    transition: transform .15s linear;
 
 }
 
