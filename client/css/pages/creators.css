@@ -48,7 +48,7 @@
     width: 20em;
 }
 
-.polBox > img {
+.polBox > a > img {
     height: 18em;
 }
 
@@ -59,6 +59,11 @@
 
 .authorSubtitle {
     font-size: 0.8em;
+}
+
+.polBox, a, a:hover {
+    color: black;
+    text-decoration: none;
 }
 
 /*END POLAROID FORMATTING*/
