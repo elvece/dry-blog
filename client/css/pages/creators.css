@@ -45,9 +45,9 @@
     box-shadow: 4px 4px 9px rgba(0,0,0,.8);
     padding: 10px 10px 25px;
     width: 20em;
-      -webkit-transform: rotate(-2deg);
+/*      -webkit-transform: rotate(-2deg);
       -moz-transform: rotate(-2deg);
-      transform: rotate(-2deg);
+      transform: rotate(-2deg);*/
 }
 
 .polBox > a > img {
