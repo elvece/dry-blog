@@ -1,4 +1,3 @@
-
 ul.polaroids img {
   display: block;
   width: 280px;
@@ -12,7 +11,7 @@ ul.polaroids a:after {
 /* By default, we tilt all our images -2 degrees */
 ul.polaroids a {
   background: #fff;
- /* display: table;*/
+  display: inline;
   float: left;
   margin: 0 0 27px 30px;
   width: auto;
@@ -97,7 +96,6 @@ ul.polaroids a {
   position: relative;
   width: 220px;
 }
-
 .polaroid img {
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;

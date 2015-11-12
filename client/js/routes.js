@@ -5,11 +5,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     .when('/', {
       title: 'Dry Blog',
       templateUrl: 'views/home.html',
-      controller: 'mainController',
-      meta: {
-        name: 'home',
-        content: 'A blog is a resource for women in technology. It provides insights into their successes and failures, provides resources worth pursuing, and creates a strong community of females pursuing careers in the tech space.'
-      }
+      controller: 'mainController'
     })
     .when('/login', {
       title: 'Login',
