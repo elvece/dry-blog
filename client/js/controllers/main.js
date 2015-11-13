@@ -36,6 +36,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
     myFactory.get(url)
       .then(function(res){
         $scope.posts = res.data;
+        // console.log($scope.posts)
       });
   };
 

@@ -1,47 +1,51 @@
 
 <div class="container">
   <div class="row full-height">
-    <div class="col-sm-8 col-sm-offset-2 center jumbo-border">
-      <div class="main-view">
+    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 center jumbo-border">
+      <div class="main-view row">
+        <div class="col-xs-12">
         <img id="logo" ng-src="https://s3.amazonaws.com/dryimages/dry_logo_fix-min.png">
         <hr class="fadeIn fadeInTwo">
+        </div>
       </div>
       <div class="home-blurb uppercase fontMontserrat row">
-          <p class="fadeIn fadeInTwo">
-          DRY Blog is a platform for women in the tech space
-          </p>
-          <p class="fadeIn fadeInThree">
-            We are a community of builders, innovators, hustlers, creators, explorers, trailblazers, and so much more
-          </p>
-          <p class="fadeIn fadeInFour">
-           Welcome to the club
-          </p>
-          <a href="#content" class="btn btn-circle page-scroll homeArrow fadeIn fadeInFive" du-smooth-scroll>
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-8 col-md-8 col-md-offset-2">
+            <p class="fadeIn fadeInTwo">
+            DRY Blog is a platform for women in the tech space
+            </p>
+            <p class="fadeIn fadeInThree">
+              We are a community of builders, innovators, hustlers, creators, explorers, trailblazers, and so much more
+            </p>
+            <p class="fadeIn fadeInFour">
+             Welcome to the club
+            </p>
+            <a href="#content" class="btn btn-circle page-scroll homeArrow fadeIn fadeInFive" du-smooth-scroll>
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
       </div>
     </div>
   </div>
   <section id="content">
-    <div class="row">
-      <div class="center col-md-12 col-xs-12">
+    <div class="row center">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
         <div class="home-blurb uppercase fontMontserrat content-blurb">
           <p><strong>Explore the stories of the successful women we have interviewed below</strong></p>
           <p>To find out more about DRY, view our <a class="titleLink" href="/about">mission</a></p>
           <br><br><br>
         </div>
-        <div class="row center">
-            <div class="col-sm-3 col-xs-12 col-md-4 col-lg-4" ng-repeat="post in posts">
-                <div class="polaroid">
-                    <a href="/post/{{post.lastName}}/{{post.firstName}}">
-                        <img ng-src="{{post.homeImage}}" width="100%" alt="Interviewee">
-                        <div class="authorTitle fontMontserrat weightSeven uppercase">{{post.firstName}}  {{post.lastName}}</div>
-                        <div class="authorSubtitle fontMontserrat weightSeven uppercase">{{post.position}}, {{post.company}}</div>
-                    </a>
-                </div>
+      </div>
+    </div>
+    <div class="row" ng-repeat="post in posts track by $index" ng-if="$index % 4 == 0">
+        <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3" ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3]" ng-if="posts[i] != null">
+            <div class="polaroid center">
+                <a href="/post/{{posts[i].lastName}}/{{posts[i].firstName}}">
+                    <img ng-src="{{posts[i].homeImage}}" width="100%" alt="Interviewee">
+                    <div class="authorTitle fontMontserrat weightSeven uppercase">{{posts[i].firstName}}  {{posts[i].lastName}}</div>
+                    <div class="authorSubtitle fontMontserrat weightSeven uppercase">{{posts[i].position}}, {{posts[i].company}}</div>
+                </a>
             </div>
         </div>
-      </div>
     </div>
   </section>
   <br><br><br><br>
