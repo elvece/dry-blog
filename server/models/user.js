@@ -47,5 +47,5 @@ User.methods.comparePassword = function(password, done) {
   });
 };
 
-module.exports = mongoose.model('dryUsers', User);
+module.exports = mongoose.model('dry-users', User);
 
