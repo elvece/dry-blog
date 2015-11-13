@@ -24,6 +24,24 @@
     height: 45vh;
 }
 
+
+/*CHECK for large screens*/
+/*@media (max-device-width: 1600px) {
+    #logo {
+        margin-top: 10%;
+        height: 70vh;
+    }
+}*/
+
+/*for landscape ipads*/
+@media (max-device-width: 1024px) {
+    #logo {
+        margin-top: 10%;
+        height: 30vh;
+    }
+}
+
+/*for ipads*/
 @media (max-device-width: 768px) {
     #logo {
         margin-top: 20%;
@@ -31,9 +49,10 @@
     }
 }
 
-@media (min-device-width: 1600px) {
+/*for landscape iphone 6plus and down*/
+@media (max-device-width: 736px) {
     #logo {
-        margin-top: 10%;
-        height: 10vh;
+        margin-top: 6%;
+        height: 30vh;
     }
 }
