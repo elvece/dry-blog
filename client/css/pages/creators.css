@@ -8,17 +8,18 @@
     margin-top: 6%;
 }
 
-@media(max-width:414px) {
+@media(max-width:480px) {
     .border {
         margin-top: 17%;
     }
 }
 
 .social {
-/*    padding-top: 0.5em;
-*/    font-size: 0.8em;
+    /*padding-top: 0.5em;*/
+    font-size: 0.8em;
     margin-bottom: -1.8em;
 }
+
 
 .aboutImages {
     border-radius: 100px;
@@ -41,6 +42,11 @@
     background-color: #fff;
 }
 
-
+@media(max-width:320px) {
+    .aboutBtn {
+        /*padding-top: 0.5em;*/
+        font-size: 1.2em;
+    }
+}
 
 
