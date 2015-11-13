@@ -56,3 +56,11 @@
         height: 30vh;
     }
 }
+
+/*for portrait iphone 6plus and down*/
+@media (max-device-width: 414px) {
+    #logo {
+        margin-top: 10%;
+        height: 35vh;
+    }
+}
