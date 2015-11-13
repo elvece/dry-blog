@@ -35,6 +35,12 @@
   text-align: justify;
 }
 
+@media(max-width:414px) {
+  .p-pad-fix {
+    text-align: left;
+  }
+}
+
 .norm {
   font-size: 1.1em;
   letter-spacing: 2px;
