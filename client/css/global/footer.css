@@ -1,7 +1,23 @@
-footer {
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 5.6em;
+}
+/*.page-wrap:after {
+  content: "";
+  display: block;
+}*/
+
+.footer {
+  height: 5.6em;
   padding-top: 1.6em;
-  margin-top: 4em;
-  margin-bottom: 0;
   font-size: 0.8em;
   border-bottom: 1px solid black;
   border-top: 1px solid black;

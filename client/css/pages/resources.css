@@ -3,10 +3,25 @@
 }
 
 .resourceMain {
+  font-size: 6.0vw;
   margin-bottom: 0.6em;
-  font-size: 4em;
 }
 
+.categoryTitle {
+    font-size: 2.0vw;
+  }
+
+/*@media(min-width:768px) {
+  .resourceMain {
+    font-size: 4.5vw;
+  }
+}
+
+@media(max-width: 767px) {
+  .categoryTitle {
+    font-size: 4vw;
+  }
+}*/
 .resourceSubtitle {
   margin-top: -1em;
   margin-bottom: -0.8em;
