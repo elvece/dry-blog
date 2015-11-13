@@ -50,39 +50,6 @@ p.intro-text {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-
-
-/*.top-content {
-    margin-top: -70px;
-}*/
-/*
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 3em;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 2em;
-    }
-}*/
-
-/*INTERVIEW*/
-/*.interview {
-    padding-top: 53em;
-    padding-bottom: 3em;
-    width: 100%;
-}
-@media (min-width:1600px){
-    .interview {
-        padding-top: 75em;
-    }
-}*/
-
 /*INTERVIEW SECTION*/
 .summaryBlock {
     font-size: 1em;
@@ -95,8 +62,6 @@ p.intro-text {
 .interviewee {
     padding-bottom: 2em;
 }
-
-
 
 /*SOCIAL SECTION*/
 .socialBlock {
