@@ -31,3 +31,9 @@
     }
 }
 
+@media (min-device-width: 1600px) {
+    #logo {
+        margin-top: 10%;
+        height: 10vh;
+    }
+}
