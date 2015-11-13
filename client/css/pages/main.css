@@ -19,30 +19,15 @@
 
 /*LOGO SIZE*/
 #logo {
+    margin-top: 10%;
     padding-left: 7%;
     height: 45vh;
 }
 
-@media (min-device-width: 320px) {
-    #logo {
-        margin-top: 18%;
-    }
-}
-
-@media (min-device-width: 375px) {
-    #logo {
-        margin-top: 30%;
-    }
-}
-
-@media (min-device-width: 768px) {
+@media (max-device-width: 768px) {
     #logo {
         margin-top: 20%;
+        height: 20vh;
     }
 }
 
-@media (min-device-width: 1200px) {
-    #logo {
-        margin-top: 10%;
-    }
-}
