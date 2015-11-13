@@ -8,6 +8,12 @@
     margin-top: 6%;
 }
 
+@media(max-width:414px) {
+    .border {
+        margin-top: 17%;
+    }
+}
+
 .social {
 /*    padding-top: 0.5em;
 */    font-size: 0.8em;
