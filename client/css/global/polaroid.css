@@ -1,6 +1,4 @@
-
 /* POLARIOD FORMATTING */
-
 
 .authorTitle {
     margin-top: 15px;
@@ -11,6 +9,7 @@
 .authorSubtitle {
     font-size: 0.8em;
     color: black;
+    font-weight: normal;
 }
 
 .polaroid {

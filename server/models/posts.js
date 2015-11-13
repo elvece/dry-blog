@@ -20,6 +20,5 @@ var Post = new Schema({
   }
 });
 
-module.exports = mongoose.model('dry-posts', Post);
+module.exports = mongoose.model('dryPosts', Post);
 
-// module.exports = mongoose.model('dryPosts', Post);
