@@ -3,7 +3,7 @@
 app.config(function($routeProvider, $locationProvider, $authProvider){
   $routeProvider
     .when('/', {
-      title: 'Dry Blog',
+      title: 'D/R/Y Blog',
       templateUrl: 'views/home.html',
       controller: 'mainController'
     })
@@ -18,12 +18,12 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
       controller: 'signupController'
     })
     .when('/about', {
-      title: 'About Dry Blog',
+      title: 'About D/R/Y Blog',
       templateUrl: 'views/about.html',
       controller: 'mainController'
     })
     .when('/creators', {
-      title: 'Dry Blog Creators',
+      title: 'D/R/Y Creators',
       templateUrl: 'views/creators.html',
       controller: 'mainController'
     })
