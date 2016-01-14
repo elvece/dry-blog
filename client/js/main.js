@@ -8,7 +8,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 });
 
 app.controller('mainController', function($scope, myFactory, $http, $location, $routeParams, $filter, $document, $window, $auth, $rootScope, $anchorScroll){
-
+  console.log('hi');
   $anchorScroll();
 
   $scope.newPost = {};

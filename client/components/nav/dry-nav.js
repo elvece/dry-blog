@@ -1,6 +1,6 @@
 angular.module('dryApp').directive('dryNav', function() {
   return {
     restrict: 'E',
-    templateUrl: '../views/header.html',
+    templateUrl: 'components/nav/header.html'
   };
 });
