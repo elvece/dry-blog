@@ -39,7 +39,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/resources', {
       title: 'Community Resources',
-      templateUrl: 'views/resources.html',
+      templateUrl: 'components/resources/resources.html',
       controller: 'mainController'
     })
     .when('/post/:lastName/:firstName', {
