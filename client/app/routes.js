@@ -34,7 +34,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/twitter', {
       title: 'Dry Blog Twitter Feed',
-      templateUrl: 'views/twitter.html',
+      templateUrl: 'components/social/twitter.html',
       controller: 'mainController'
     })
     .when('/resources', {
@@ -44,8 +44,8 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/post/:lastName/:firstName', {
       title: 'Interview',
-      templateUrl: 'views/individual.html',
-      controller: 'postController'
+      templateUrl: 'views/individual.html'
+      // controller: 'postController'
     })
     .otherwise({
       redirectTo: '/'

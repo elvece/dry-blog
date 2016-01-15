@@ -1,0 +1,87 @@
+
+<!-- PROFILE IMAGE SECTION -->
+<div class="full-height">
+  <header class="intro center imgFormat" ng-style="{'background': post.img, 'background-repeat': 'no-repeat', 'background-size': 'cover', 'background-attachment': 'scroll', 'background-position': 'center', 'display': 'block', 'position': 'absolute','width': '100%', 'height': '100%'}">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row center">
+          <div class="top-content">
+            <div class="whiteBack block">
+              <h1 class="brand-heading">{{ post.firstName }} {{ post.lastName}}</h1>
+              <p class="intro-text">{{ post.position }}, {{ post.company }}</p>
+            </div>
+            <a href="#interview-stuff" class="btn btn-circle page-scroll homeArrow" du-smooth-scroll>
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- Interview Section -->
+<div>
+  <section class="container content-section text-center interview">
+    <div id="interview-stuff" class="row">
+      <div class="col-lg-8 col-lg-offset-2"><br><br>
+        <h2>The Interview</h2>
+        <!-- <span am-time-ago="time(post._id)"></span> -->
+        <!-- <div> {{ timeStamp(post._id) }} </div> -->
+        <div class="center row interview-font">
+          <div class="col-md-10 col-md-offset-1 summaryBlock">
+            <p class="left italic">
+              {{ post.summary }}
+            </p>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="interview-font" ng-repeat="content in post.content">
+          <div class="interviewer left italic">{{ content.question }}</div>
+          <div class="interviewee left"><strong>{{ post.firstName }}: </strong>{{ content.answer }}</div>
+        </div>
+        <br><hr><br>
+        <div class="center row">
+          <div class="col-md-10 col-md-offset-1 left summaryBlock italic grayColor">
+            <p>We ask each interviewee to share a resource with our community. It can be anything that inspiries them, facilitates self-development, or something relaxing after a long day's work.</p>
+            <p class="center">Check out {{post.firstName}}'s resource <a class="personalLink" href="/resources">here!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Interviewee Social Links -->
+<div class="socialBlock">
+  <section id="about" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <ul class="list-inline banner-social-buttons">
+          <li ng-show="post.social.twitter.length > 0">
+            <a href="{{ post.social.twitter }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+          </li>
+          <li ng-show="post.social.github.length > 0">
+            <a href="{{ post.social.github }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
+          </li>
+          <li ng-show="post.social.instagram.length > 0">
+            <a href="{{ post.social.instagram }}" target="_blank" class="btn btn-default btn-lg interviewBtn blackColor transparent weightFour fontMontserrat"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
+          </li>
+          <li ng-show="post.social.linkedin.length > 0">
+            <a href="{{ post.social.linkedin }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+          </li>
+          <li ng-show="post.social.website.length > 0">
+            <a href="{{ post.social.website }}" target="_blank" class="btn btn-default btn-lg interviewBtn transparent weightFour fontMontserrat"><i class="fa fa-globe fa-fw"></i> <span class="network-name"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scroll to top -->
+    <div class="center">
+      <a href="" ng-click="toTheTop()" class="btn btn-circle page-scroll homeArrow" du-smooth-scroll>
+        <i class="fa fa-angle-double-up animated"></i>
+      </a>
+    </div>
+  </section>
+</div>

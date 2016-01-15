@@ -1,4 +1,4 @@
-angular.module('dryApp').directive('dryNav', function() {
+app.directive('dryNav', function() {
   return {
     restrict: 'E',
     templateUrl: 'components/nav/header.html'
