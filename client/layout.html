@@ -28,9 +28,9 @@
   <link rel="stylesheet" type="text/css" href="./css/pages/login.css">
 </head>
 
-<body id="page-top" data-spy="scroll" ng-controller="mainController">
+<body id="page-top" data-spy="scroll">
 <!-- NOTE: why did we need this on the body - so can access functions, like scroll, from interview page, but it doubles everything in mainController. ng-controller="mainController" -->
-  <div class="page-wrap">
+  <div class="page-wrap" ng-controller="mainController">
 
     <!-- Navigation -->
     <dry-nav></dry-nav>

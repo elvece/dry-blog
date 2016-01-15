@@ -45,7 +45,6 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     .when('/post/:lastName/:firstName', {
       title: 'Interview',
       templateUrl: 'views/individual.html'
-      // controller: 'postController'
     })
     .otherwise({
       redirectTo: '/'
