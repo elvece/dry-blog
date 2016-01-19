@@ -3,8 +3,8 @@
 
 p {
 /*    padding-top: 1.2em;*/
-    font-size: 1em;
-    line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 ul {
@@ -12,16 +12,16 @@ ul {
 }
 
 .buffer {
-    margin-top: 3.5em;
+  margin-top: 3.5em;
 }
 
 .btn-circle:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .inline {
-    display: inline-block;
+  display: inline-block;
 }
 
 hr {
@@ -31,14 +31,14 @@ hr {
 }
 
 .full-height {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 /*COLORS*/
 body {
-    color: #262626;
-    background-color: #fff;
+  color: #262626;
+  background-color: #fff;
 }
 
 .transparent {
@@ -77,62 +77,62 @@ body {
 
 /*ARROW BUTTONS*/
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 1em;
-    font-size: 40px;
-    color: #000;
-    background: 0 0;
+  width: 70px;
+  height: 70px;
+  margin-top: 1em;
+  font-size: 40px;
+  color: #000;
+  background: 0 0;
 }
 
 .btn-circle:hover,
 .btn-circle:focus {
-    color: #000;
+  color: #000;
 }
 
 .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
 
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 

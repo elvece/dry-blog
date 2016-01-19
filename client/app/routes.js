@@ -9,7 +9,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/login', {
       title: 'Login',
-      templateUrl: 'views/login.html',
+      templateUrl: 'components/auth/login.html',
       controller: 'loginController'
     })
     .when('/signup', {
@@ -29,7 +29,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/add', {
       title: 'Add Interview',
-      templateUrl: 'views/add.html',
+      templateUrl: 'components/add/add.html',
       controller: 'mainController'
     })
     .when('/twitter', {
