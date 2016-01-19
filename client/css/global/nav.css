@@ -1,18 +1,18 @@
 /*NAVBAR*/
 .navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    background-color: #fff;
-    position: absolute;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  background-color: #fff;
+  position: absolute;
 }
 
 .navbar-custom a {
-    color: #000;
+  color: #000;
 }
 
 .navbar-custom .nav li a:hover {
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }

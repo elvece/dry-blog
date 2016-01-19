@@ -1,16 +1,16 @@
 .addBtn {
-    border: none;
-    font-size: 1.6em;
-    margin: -0.55em;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  border: none;
+  font-size: 1.6em;
+  margin: -0.55em;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .addBtn:hover,
 .addBtn:focus {
-    color: #964647;
-    background-color: #fff;
+  color: #964647;
+  background-color: #fff;
 }
 
 .addTitle {

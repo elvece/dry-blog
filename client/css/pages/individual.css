@@ -1,86 +1,86 @@
 /*INTERVIEW LANDING PAGE*/
 .intro {
 /*    display: table;
-    padding: 100px 0;
-    color: #000;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;*/
-    border-bottom: 1px solid black;
-    overflow: hidden;
-    text-align: center;
+  padding: 100px 0;
+  color: #000;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;*/
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  text-align: center;
 }
 
 .top-content {
-    position: absolute;
-    width: 60%;
-    bottom: 4%;
-    left:20%;
+  position: absolute;
+  width: 60%;
+  bottom: 4%;
+  left: 20%;
 }
 
 .brand-heading {
-    padding-top: 2%;
-    font-size: 5.5vmin;
-    border-top: 1px solid black;
+  padding-top: 2%;
+  font-size: 5.5vmin;
+  border-top: 1px solid black;
 }
 
 /*@media (min-width:1600px){
-    .intro .intro-body .brand-heading {
-        margin-top: 19.5em;
-    }
+  .intro .intro-body .brand-heading {
+      margin-top: 19.5em;
+  }
 }
 
 @media (min-width:1400px){
-    .intro .intro-body .brand-heading {
-        margin-top: 14em;
-    }
+  .intro .intro-body .brand-heading {
+      margin-top: 14em;
+  }
 }
 */
 p.intro-text {
-    font-size: 4.0vmin;
-    padding-bottom: 2%;
-    margin-top: -10px;
+  font-size: 4.0vmin;
+  padding-bottom: 2%;
+  margin-top: -10px;
 }
 
 .block {
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 /*INTERVIEW SECTION*/
 .summaryBlock {
-    font-size: 1em;
+  font-size: 1em;
 }
 .interviewer {
-    padding-bottom: 1em;
-    font-size: 1.1em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
 }
 
 .interviewee {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 /*SOCIAL SECTION*/
 .socialBlock {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 .interviewBtn {
-    border: 1px solid #000;
-    border-radius: 0;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .interviewBtn:hover,
 .interviewBtn:focus {
-    border: 1px solid #964647;
-    outline: 0;
-    color: #964647;
-    background-color: #fff;
+  border: 1px solid #964647;
+  outline: 0;
+  color: #964647;
+  background-color: #fff;
 }
 

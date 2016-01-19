@@ -1,60 +1,60 @@
 /* POLARIOD FORMATTING */
 
 .authorTitle {
-    margin-top: 15px;
-    font-size: 1.1em;
-    color: black;
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: black;
 }
 
 .authorSubtitle {
-    font-size: 0.8em;
-    color: black;
-    font-weight: normal;
+  font-size: 0.8em;
+  color: black;
+  font-weight: normal;
 
 }
 
 .subtitle-height {
-    height: 5em;
-    overflow: hidden;
+  height: 5em;
+  overflow: hidden;
 }
 
 .polaroid {
-    padding: 10px 10px 20px 10px;
-    box-shadow: 4px 4px 9px rgba(0,0,0,.8);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 4px 4px 9px rgba(0,0,0,.8);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-device-width: 768px) {
-    .polaroid {
-        min-height: 100px;
-    }
-    .authorTitle {
-        font-size: 0.8em;
-    }
-    .authorSubtitle {
-        font-size: 0.6em;
-    }
+  .polaroid {
+    min-height: 100px;
+  }
+  .authorTitle {
+    font-size: 0.8em;
+  }
+  .authorSubtitle {
+    font-size: 0.6em;
+  }
 }
 
 @media (max-device-width: 1024px) {
-    .polaroid {
-        min-height: 100px;
-    }
-    .authorTitle {
-        font-size: 0.8em;
-    }
-    .authorSubtitle {
-        font-size: 0.6em;
-    }
+  .polaroid {
+    min-height: 100px;
+  }
+  .authorTitle {
+    font-size: 0.8em;
+  }
+  .authorSubtitle {
+    font-size: 0.6em;
+  }
 }
 .polaroid:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.25);
-    transform: scale(1.1);
-    -webkit-transition: -webkit-transform .15s linear;
-    transition: transform .15s linear;
-    text-decoration: none;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.25);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform .15s linear;
+  transition: transform .15s linear;
+  text-decoration: none;
 }
 
 .polaroid a:hover {
