@@ -2,7 +2,7 @@ app.directive('polaroids', ['myFactory', function(){
   return{
     restrict: 'E',
     templateUrl: 'components/polaroids/polaroids.html',
-    controller: function($scope){
+    controller: function($scope, myFactory){
       getPosts = function(url){
         myFactory.get(url)
           .then(function(res){
@@ -10,6 +10,7 @@ app.directive('polaroids', ['myFactory', function(){
             // console.log($scope.posts)
           });
       };
+      $scope.getAllPosts = getPosts('/api/posts');
     }
   };
 }]);

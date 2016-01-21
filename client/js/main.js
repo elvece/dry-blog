@@ -32,13 +32,13 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
 
   //helper functions
   //IN POLAROIDS DIRECTIVE NOW
-  getPosts = function(url){
-    myFactory.get(url)
-      .then(function(res){
-        $scope.posts = res.data;
-        // console.log($scope.posts)
-      });
-  };
+  // getPosts = function(url){
+  //   myFactory.get(url)
+  //     .then(function(res){
+  //       $scope.posts = res.data;
+  //       // console.log($scope.posts)
+  //     });
+  // };
 
 // ADD.JS CONTROLLER
   $scope.tempContent = [];
@@ -76,7 +76,9 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   };
 
   //get all posts
-  $scope.getAllPosts = getPosts('/api/posts');
+  //NOW IN POLAROIDS DIRECTIVE
+  // $scope.getAllPosts = getPosts('/api/posts');
+
   //globals
   $scope.metaForm = false;
   $scope.socialForm = true;
