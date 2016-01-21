@@ -1,7 +1,6 @@
 app.controller('loginController', function($scope, $auth, $rootScope, $window, $location) {
 
   $scope.login = function() {
-    console.log('test login')
     var user = {
       email: $scope.email,
       password: $scope.password
@@ -9,7 +8,6 @@ app.controller('loginController', function($scope, $auth, $rootScope, $window, $
 
     $auth.login(user)
       .then(function(response) {
-        // console.log(response);
         $window.localStorage.currentUser = JSON.stringify(response.data.user);
         $rootScope.currentUser = JSON.parse($window.localStorage.currentUser);
         $location.path('/home');

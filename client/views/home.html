@@ -33,19 +33,7 @@
         <br><br><br>
       </div>
     </div>
-    <div class="row" ng-repeat="post in posts track by $index" ng-if="$index % 4 == 0">
-        <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3" ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3]" ng-if="posts[i] != null">
-            <div class="polaroid center">
-                <a href="/post/{{posts[i].lastName}}/{{posts[i].firstName}}">
-                    <img ng-src="{{posts[i].homeImage}}" width="100%" alt="Interviewee">
-                    <div class="subtitle-height">
-                      <div class="authorTitle fontMontserrat weightSeven uppercase">{{posts[i].firstName}}  {{posts[i].lastName}}</div>
-                      <div class="authorSubtitle fontMontserrat weightSeven uppercase">{{posts[i].position}}, {{posts[i].company}}</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+    <polaroids></polaroids>
   </section>
   <br><br><br><br>
   <div class="center home-blurb uppercase fontMontserrat">

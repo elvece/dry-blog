@@ -31,6 +31,7 @@ app.controller('mainController', function($scope, myFactory, $http, $location, $
   };
 
   //helper functions
+  //IN POLAROIDS DIRECTIVE NOW
   getPosts = function(url){
     myFactory.get(url)
       .then(function(res){
