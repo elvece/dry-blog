@@ -29,7 +29,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/add', {
       title: 'Add Interview',
-      templateUrl: 'components/add/add.html',
+      templateUrl: 'views/add-post.html',
       controller: 'mainController'
     })
     .when('/twitter', {
