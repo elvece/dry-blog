@@ -11,8 +11,9 @@ ul {
   list-style: none;
 }
 
+/*changed from 3.5 to match position relative nav*/
 .buffer {
-  margin-top: 3.5em;
+  margin-top: 0.5em;
 }
 
 .btn-circle:focus {
