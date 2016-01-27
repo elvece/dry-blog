@@ -9,14 +9,14 @@ app.config(function($routeProvider, $locationProvider, $authProvider){
     })
     .when('/login', {
       title: 'Login',
-      templateUrl: 'components/auth/login.html',
-      controller: 'loginController'
+      templateUrl: 'views/auth.html',
+      controller: 'mainController'
     })
-    .when('/signup', {
-      title: 'Signup',
-      templateUrl: 'views/signup.html',
-      controller: 'signupController'
-    })
+    // .when('/signup', {
+    //   title: 'Signup',
+    //   templateUrl: 'views/signup.html',
+    //   controller: 'signupController'
+    // })
     .when('/about', {
       title: 'About D/R/Y Blog',
       templateUrl: 'views/about.html',
