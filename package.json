@@ -25,7 +25,7 @@
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-jshint": "^2.1.0",
-    "gulp-nodemon": "^2.5.0",
+    "gulp-nodemon": "^2.2.1",
     "jshint-stylish": "^2.2.1"
   }
 }
