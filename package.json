@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "browser-sync": "^2.29.1",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-jshint": "^2.1.0",
-    "gulp-nodemon": "^2.2.1",
+    "gulp-nodemon": "^2.5.0",
     "jshint-stylish": "^2.2.1"
   }
 }
