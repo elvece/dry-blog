@@ -22,7 +22,7 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^3.0.3",
     "gulp": "^5.0.0",
     "gulp-jshint": "^2.1.0",
     "gulp-nodemon": "^2.5.0",
