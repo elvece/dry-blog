@@ -15,7 +15,7 @@
     "express": "^4.21.2",
     "jwt-simple": "^0.5.6",
     "moment": "^2.29.4",
-    "mongoose": "^5.13.20",
+    "mongoose": "^8.8.3",
     "mongoose-q": "^0.1.0",
     "morgan": "^1.9.1",
     "ng-file-upload": "^9.1.2",
