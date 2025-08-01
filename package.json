@@ -17,7 +17,7 @@
     "moment": "^2.29.4",
     "mongoose": "^8.9.5",
     "mongoose-q": "^0.1.0",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.1",
     "ng-file-upload": "^9.1.2",
     "serve-favicon": "^2.5.0"
   },
